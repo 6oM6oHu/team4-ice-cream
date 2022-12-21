@@ -1,0 +1,44 @@
+@mixin push--auto() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex--center($type: flex, $js-con: center) {
+  display: $type;
+  align-items: center;
+  justify-content: $js-con;
+}
+
+@mixin sectionSet($p-top: 60px, $p-bot: 60px, $text-aln: center) {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-top: $p-top;
+  padding-bottom: $p-bot;
+  text-align: $text-aln;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
