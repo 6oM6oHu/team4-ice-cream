@@ -3,12 +3,15 @@
   margin-right: auto;
 }
 
-@mixin flex--center($type: flex, $js-con: center) {
+// По бажанню
+
+@mixin flex--center($type: flex, $js-con: center, $al-i: center) {
   display: $type;
-  align-items: center;
   justify-content: $js-con;
+  align-items: $al-i;
 }
 
+// По бажанню
 @mixin sectionSet($p-top: 60px, $p-bot: 60px, $text-aln: center) {
   margin: 0 auto;
   max-width: 1600px;
