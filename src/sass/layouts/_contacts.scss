@@ -74,7 +74,7 @@
 }
 
 .contacts-section__address {
-    width: 212px;
+    width: 190px;
     display: inline-block;
     margin-bottom: 24px;
     font-family: 'Montserrat', sans-serif;
@@ -109,24 +109,47 @@
 }
 
 .contacts-section__schedule-item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+
     &:not(:last-child) {
         margin-bottom: 8px;
     }
 }
 
 .contacts-section__schedule-days {
-
+    color: #131313;
 }
 
-.contacts-section__schedule-hours {}
+.contacts-section__schedule-hours {
+    color: #ABABAB;
+}
 
 .contacts-section__phone {
     display: block;
     margin-bottom: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    letter-spacing: 0.04em;
+    color: #131313;
 }
 
 .contacts-section__email {
     display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    letter-spacing: 0.04em;
+    color: #131313;
 }
 
 .contacts-section__button {
@@ -165,6 +188,6 @@
 }
 
 // delete
-body {
-    background: none;
-}
+// body {
+//     background: none;
+// }
