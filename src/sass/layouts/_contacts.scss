@@ -24,6 +24,17 @@
 
 .contacts-section__list {
     margin-bottom: 20px;
+
+    @include tablet {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    @include desktop {
+        gap: 32px;
+        margin-bottom: 60px;
+    }
 }
 
 .contacts-section__item {
@@ -35,12 +46,30 @@
     padding-right: 32px;
     padding-top: 40px;
     padding-bottom: 24px;
-    background: #FFFFFF;
+    background: #FCFCFC;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
     &:not(:last-child) {
         margin-bottom: 16px;
+    }
+
+    @include tablet {
+        max-width: 224px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    @include desktop {
+        max-width: 368px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -61,6 +90,18 @@
     text-transform: uppercase;
     background-color: #F8D24E;
     border-radius: 4px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: calc(22 / 16);
+        padding-left: 13px;
+        padding-right: 13px;
+        border-radius: 6px;
+    }
+
+    @include desktop {
+        margin-bottom: 32px;
+    }
 }
 
 .contacts-section__city {
@@ -72,6 +113,16 @@
     line-height: calc(22 / 12);
     letter-spacing: 0.04em;
     color: #131313;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
 }
 
 .contacts-section__address {
@@ -84,6 +135,21 @@
     line-height: calc(22 / 12);
     letter-spacing: 0.04em;
     color: #D6936D;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+        margin-bottom: 32px;
+    }
+    
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(29 / 16);
+    }
 }
 
 .contacts-section__schedule-list {
@@ -95,6 +161,10 @@
         height: 1px;
         margin-bottom: 24px;
         background-color: gray;
+
+        @include tablet {
+            margin-bottom: 32px;
+        }
     }
 
     &::after {
@@ -103,6 +173,14 @@
         height: 1px;
         margin-top: 24px;
         background-color: gray;
+
+        @include tablet {
+            margin-top: 32px;
+        }
+    }
+
+    @include desktop {
+        margin-bottom: 32px;
     }
 }
 
@@ -117,6 +195,16 @@
     &:not(:last-child) {
         margin-bottom: 8px;
     }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
 }
 
 .contacts-section__schedule-days {
@@ -128,17 +216,10 @@
 }
 
 .contacts-section__phone {
-    display: block;
     margin-bottom: 6px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
-    letter-spacing: 0.04em;
-    color: #131313;
 }
 
+.contacts-section__phone,
 .contacts-section__email {
     display: block;
     font-family: 'Montserrat';
@@ -148,6 +229,31 @@
     line-height: calc(19 / 12);
     letter-spacing: 0.04em;
     color: #131313;
+
+    &:hover {
+        text-decoration: underline;
+        color: #0A8817;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(21 / 14);
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(24 / 16);
+    }
+}
+
+.contacts-section__buttons-list {
+    @include tablet {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .contacts-section__button {
@@ -167,6 +273,10 @@
 
 .contacts-section__button--location-button {
     margin-bottom: 16px;
+
+    @include tablet {
+        margin-bottom: 0;
+    }
 }
 
 .contacts-section__button--franchise-button {
