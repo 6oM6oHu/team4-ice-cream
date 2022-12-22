@@ -12,6 +12,7 @@
   background-color: var(--bcg-dark-color);
   padding-top: 60px;
   padding-bottom: 50px;
+  text-align: center;
 
   @include tablet {
     padding-bottom: 60px;
@@ -19,14 +20,13 @@
 }
 
 .about__uptitle {
-  font-family: 'Montserrat';
-  font-style: normal;
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.04em;
 
-  text-align: center;
   text-transform: uppercase;
 
   color: var(--title-light-color);
@@ -41,30 +41,37 @@
   }
 }
 .about__title {
-  font-family: 'Seymour One';
-  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  max-width: 210px;
+
   font-weight: 400;
   font-size: 30px;
   line-height: 1.27;
   letter-spacing: 0.04em;
 
-  text-align: center;
-  text-transform: uppercase;
-
   color: var(--title-light-color);
 
   @include tablet {
+    margin-bottom: 72px;
+    max-width: 100%;
+
     font-size: 34px;
     line-height: 1.26;
     letter-spacing: 0.06em;
   }
   @include desktop {
+    margin-bottom: 82px;
     font-size: 36px;
     line-height: 1.25;
   }
 }
 
 .about__wrap-content {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,45 +85,115 @@
   }
 }
 
-.about__circle {
-  position: relative;
+.about__wrap-content::before {
+  content: '';
   width: 279px;
   height: 278px;
-  margin-bottom: 69px;
+  flex-shrink: 0;
 
-  border-radius: 140px;
+  margin-bottom: 62px;
+
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
     #d9d9d9;
+  border-radius: 140px;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+  @include tablet {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 0;
+
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 165px;
+  }
+  @include desktop {
+    width: 490px;
+    height: 490px;
+
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border-radius: 250px;
+  }
 }
 
-.about__circle::before {
+.about__wrap-content::after {
   content: '';
   position: absolute;
   top: 29px;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
+
   width: 279px;
   height: 278px;
   flex-shrink: 0;
 
-  background-image: url(../images/about-cow-mob-1x.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-image: url(../images/about-cow-mob-1x.png);
+  @include retina {
+    background-image: url(../images/about-cow-mob-2x.png);
+  }
+
+  @include tablet {
+    left: 0;
+    transform: translate(0);
+
+    width: 330px;
+    height: 330px;
+    background-image: url(../images/about-cow-tab-1x.png);
+    @include retina {
+      background-image: url(../images/about-cow-tab-2x.png);
+    }
+  }
+  @include desktop {
+    width: 490px;
+    height: 490px;
+    background-image: url(../images/about-cow-desk-1x.png);
+    @include retina {
+      background-image: url(../images/about-cow-desk-2x.png);
+    }
+  }
+}
+
+.about__wrap-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @include tablet {
+    align-items: start;
+
+    gap: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include desktop {
+    gap: 54px;
+    padding-right: 105px;
+  }
+}
+
+.about__wrap-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  @include tablet {
+    gap: 8px;
+  }
 }
 
 .about__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.75;
   letter-spacing: 0.04em;
-
-  text-align: center;
 
   color: var(--title-light-color);
 
@@ -127,28 +204,4 @@
   @include desktop {
     font-size: 16px;
   }
-}
-
-.button--about {
-  width: 164px;
-  height: 42px;
-  border-radius: 10px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-
-  background-color: var(--button-bcg);
-  color: var(--button-black-color);
-}
-
-.button--about:hover,
-.button--about:focus {
-  background-color: var(--button-bcg-accent);
-}
-
-.button--about:focus {
-  color: var(--title-light-color);
 }
