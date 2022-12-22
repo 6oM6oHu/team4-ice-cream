@@ -1,0 +1,154 @@
+:root {
+  --bcg-dark-color: #84a178;
+  --title-light-color: #fcfcfc;
+  --button-black-color: #000000;
+  --button-bcg: #f8d24e;
+  --button-bcg-accent: #0a8817;
+
+  --button-bcg-disabled: #ababab;
+}
+
+.about {
+  background-color: var(--bcg-dark-color);
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+}
+
+.about__uptitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--title-light-color);
+
+  @include tablet {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.23px;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
+}
+.about__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--title-light-color);
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+  }
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.about__wrap-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 38px;
+  }
+  @include desktop {
+    gap: 109px;
+  }
+}
+
+.about__circle {
+  position: relative;
+  width: 279px;
+  height: 278px;
+  margin-bottom: 69px;
+
+  border-radius: 140px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+}
+
+.about__circle::before {
+  content: '';
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 279px;
+  height: 278px;
+  flex-shrink: 0;
+
+  background-image: url(../images/about-cow-mob-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+
+  color: var(--title-light-color);
+
+  @include tablet {
+    text-align: left;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.button--about {
+  width: 164px;
+  height: 42px;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  background-color: var(--button-bcg);
+  color: var(--button-black-color);
+}
+
+.button--about:hover,
+.button--about:focus {
+  background-color: var(--button-bcg-accent);
+}
+
+.button--about:focus {
+  color: var(--title-light-color);
+}
