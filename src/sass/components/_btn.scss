@@ -1,0 +1,96 @@
+.button {
+  background-color: cornflowerblue;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  height: 42px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  color: #000000;
+  font-weight: 600;
+
+  background: #f8d24e;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn-color {
+  &:hover {
+    background: #0a8817;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+    background: #0a8817;
+  }
+}
+
+.btn-transp {
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+}
+
+.btn-products {
+  min-width: 108px;
+  height: 38px;
+
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  @include desktop {
+    min-width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.28;
+
+    border-radius: 10px;
+  }
+}
+
+//button read more
+
+.button-icon {
+  fill: currentColor;
+}
+.btn-read {
+  min-width: 164px;
+}
+
+.btn-location {
+  min-width: 196px;
+}
+
+.btn-buy-now {
+  min-width: 152px;
+}
