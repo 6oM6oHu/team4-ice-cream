@@ -32,6 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 32px;
+    padding-right: 32px;
     padding-top: 40px;
     padding-bottom: 24px;
     background: #FFFFFF;
@@ -74,7 +75,6 @@
 }
 
 .contacts-section__address {
-    width: 190px;
     display: inline-block;
     margin-bottom: 24px;
     font-family: 'Montserrat', sans-serif;
@@ -92,7 +92,6 @@
     &::before {
         content: '';
         display: block;
-        max-width: 216px;
         height: 1px;
         margin-bottom: 24px;
         background-color: gray;
@@ -101,7 +100,6 @@
     &::after {
         content: '';
         display: block;
-        max-width: 216px;
         height: 1px;
         margin-top: 24px;
         background-color: gray;
@@ -153,24 +151,13 @@
 }
 
 .contacts-section__button {
-    min-width: 196px;
-    height: 42px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-direction: row;
     gap: 4px;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(18 / 14);
-    text-align: center;
-    cursor: pointer;
-    background: none;
-    border: none;
-    border-radius: 10px;
 }
 
 .contacts-section__button-icon {
@@ -180,11 +167,10 @@
 
 .contacts-section__button--location-button {
     margin-bottom: 16px;
-    background: #F8D24E;
 }
 
 .contacts-section__button--franchise-button {
-    border: 2px solid #F8D24E;
+    
 }
 
 // delete
