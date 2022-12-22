@@ -225,9 +225,9 @@
     line-height: calc(19 / 12);
     letter-spacing: 0.04em;
     color: #131313;
+    transition: var(--transit);
 
     &:hover {
-        text-decoration: underline;
         color: #0A8817;
     }
 
@@ -260,6 +260,7 @@
     gap: 4px;
     align-items: center;
     justify-content: center;
+    transition: var(--transit);
 }
 
 .contacts-section__button-icon {
