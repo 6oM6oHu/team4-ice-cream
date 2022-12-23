@@ -1,12 +1,36 @@
 <header class="header">
   <a href="#" class="header__logo">
-    <svg class="header__icon">
-      <use href="./images/лого.svg"></use>
-    </svg>
+    <picture>
+      <source
+        srcset="
+          ./images/header-logo-desk-1x.png 1x,
+          ./images/header-logo-desk-2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/header-logo-tab-1x.png 1x,
+          ./images/header-logo-tab-2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/header-logo-mob-1x.png 1x,
+          ./images/header-logo-mob-2x.png 2x
+        "
+        media="(min-width: 480px)"
+      />
+      <img src="./images/header-logo-desk-1x.png" alt="logo" />
+    </picture>
   </a>
-  <nav class="header__nav">
+  <!-- ------------------------------modal-------------------------------- -->
+  <nav class="header__nav modal" data-modal="mob-menu">
     <ul class="header__list">
-      <li class="header__item"><a href="#" class="header__link">Home</a></li>
+      <li class="header__item">
+        <a href="#" class="header__link">Home</a>
+      </li>
       <li class="header__item">
         <a href="#How it’s made?" class="header__link">How it’s made?</a>
       </li>
@@ -18,10 +42,20 @@
       </li>
     </ul>
   </nav>
-  <button type="button" class="header__menu">
-    <svg class="header_menu-icon">
-      <use href="./images/eva_menu-fill.svg"></use>
+  <!-- ----------------------------open/close------------------------------ -->
+  <button class="header__menu-button">
+    <svg width="32" height="32">
+      <use
+        class="header__menu-open js-open-modal"
+        href="./images/icons.svg#icon-menu-close"
+        data-modal="mob-menu"
+      ></use>
+      <use
+        class="header__menu-close js-modal-close"
+        href="./images/icons.svg#icon-mob-menu"
+      ></use>
     </svg>
   </button>
-  <button class="header__button-buy">Buy now ></button>
+  <!-- -------------------------------button------------------------------- -->
+  <button class="header__button-buy hide">Buy now ></button>
 </header>
