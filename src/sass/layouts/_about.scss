@@ -1,21 +1,16 @@
-:root {
-  --bcg-dark-color: #84a178;
-  --title-light-color: #fcfcfc;
-  --button-black-color: #000000;
-  --button-bcg: #f8d24e;
-  --button-bcg-accent: #0a8817;
-
-  --button-bcg-disabled: #ababab;
-}
-
 .about {
-  background-color: var(--bcg-dark-color);
+  background-color: $prime-bg-color;
   padding-top: 60px;
   padding-bottom: 50px;
+
   text-align: center;
+  color: $prime-text-color;
 
   @include tablet {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-bottom: 99px;
   }
 }
 
@@ -28,8 +23,6 @@
   letter-spacing: 0.04em;
 
   text-transform: uppercase;
-
-  color: var(--title-light-color);
 
   @include tablet {
     font-weight: 800;
@@ -44,23 +37,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
-
   max-width: 210px;
 
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.27;
-  letter-spacing: 0.04em;
-
-  color: var(--title-light-color);
 
   @include tablet {
     margin-bottom: 72px;
     max-width: 100%;
-
-    font-size: 34px;
-    line-height: 1.26;
-    letter-spacing: 0.06em;
   }
   @include desktop {
     margin-bottom: 82px;
@@ -83,77 +66,71 @@
   @include desktop {
     gap: 109px;
   }
-}
+  &::before {
+    content: '';
+    width: 279px;
+    height: 278px;
+    flex-shrink: 0;
 
-.about__wrap-content::before {
-  content: '';
-  width: 279px;
-  height: 278px;
-  flex-shrink: 0;
+    margin-bottom: 62px;
 
-  margin-bottom: 62px;
+    background: $mustard-circle-grd;
+    border-radius: 140px;
+    box-shadow: 0px 4.49px 16.82px rgba(153, 114, 23, 0.25);
 
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
-  border-radius: 140px;
-  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    @include tablet {
+      width: 330px;
+      height: 330px;
+      margin-bottom: 0;
 
-  @include tablet {
-    width: 330px;
-    height: 330px;
-    margin-bottom: 0;
+      box-shadow: 0px 5.3px 19.9px rgba(153, 114, 23, 0.25);
+      border-radius: 165px;
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
 
-    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
-    border-radius: 165px;
-  }
-  @include desktop {
-    width: 490px;
-    height: 490px;
-
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    border-radius: 250px;
-  }
-}
-
-.about__wrap-content::after {
-  content: '';
-  position: absolute;
-  top: 29px;
-  left: 50%;
-  transform: translate(-50%);
-
-  width: 279px;
-  height: 278px;
-  flex-shrink: 0;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/about-cow-mob-1x.png);
-  @include retina {
-    background-image: url(../images/about-cow-mob-2x.png);
-  }
-
-  @include tablet {
-    left: 0;
-    transform: translate(0);
-
-    width: 330px;
-    height: 330px;
-    background-image: url(../images/about-cow-tab-1x.png);
-    @include retina {
-      background-image: url(../images/about-cow-tab-2x.png);
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+      border-radius: 250px;
     }
   }
-  @include desktop {
-    width: 490px;
-    height: 490px;
-    background-image: url(../images/about-cow-desk-1x.png);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 279px;
+    height: 278px;
+    flex-shrink: 0;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/about-cow-mob-1x.png);
     @include retina {
-      background-image: url(../images/about-cow-desk-2x.png);
+      background-image: url(../images/about-cow-mob-2x.png);
+    }
+
+    @include tablet {
+      left: 0;
+      transform: translate(0);
+
+      width: 330px;
+      height: 330px;
+      background-image: url(../images/about-cow-tab-1x.png);
+      @include retina {
+        background-image: url(../images/about-cow-tab-2x.png);
+      }
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+      background-image: url(../images/about-cow-desk-1x.png);
+      @include retina {
+        background-image: url(../images/about-cow-desk-2x.png);
+      }
     }
   }
 }
@@ -163,15 +140,11 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
 
   @include tablet {
     align-items: start;
 
     gap: 32px;
-    padding-left: 0;
-    padding-right: 0;
   }
   @include desktop {
     gap: 54px;
@@ -184,24 +157,48 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @include tablet {
     gap: 8px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .about__text {
   font-size: 12px;
-  line-height: 1.75;
+  line-height: 1.58;
   letter-spacing: 0.04em;
 
-  color: var(--title-light-color);
-
   @include tablet {
+    line-height: 1.75;
     text-align: left;
   }
 
   @include desktop {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.93;
+  }
+  &--start {
+    line-height: 1.75;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+
+  &--last {
+    display: none;
+
+    @include tablet {
+      display: block;
+      line-height: 1.92;
+    }
+
+    @include desktop {
+      line-height: 1.93;
+    }
   }
 }
