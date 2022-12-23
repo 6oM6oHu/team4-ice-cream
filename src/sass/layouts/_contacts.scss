@@ -1,11 +1,3 @@
-.contacts-section {}
-
-.section {}
-
-.contacts-section__container {}
-
-.container {}
-
 .contacts-section__title {
     position: absolute;
     width: 1px;
@@ -42,7 +34,7 @@
     padding-right: 32px;
     padding-top: 40px;
     padding-bottom: 24px;
-    background: #FCFCFC;
+    background: $prime-text-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -69,8 +61,6 @@
     }
 }
 
-.contacts-section__branch-wrap {}
-
 .contacts-section__branch-type {
     display: inline-block;
     padding: 4px 22px;
@@ -82,9 +72,9 @@
     line-height: calc(14 / 12);
     text-align: center;
     letter-spacing: 0.04em;    
-    color: #131313;
+    color: $second-text-color;
     text-transform: uppercase;
-    background-color: #F8D24E;
+    background-color: $yellow;
     border-radius: 4px;
 
     @include tablet {
@@ -108,7 +98,7 @@
     font-size: 12px;
     line-height: calc(22 / 12);
     letter-spacing: 0.04em;
-    color: #131313;
+    color: $second-text-color;
 
     @include tablet {
         font-size: 14px;
@@ -130,7 +120,7 @@
     font-size: 12px;
     line-height: calc(22 / 12);
     letter-spacing: 0.04em;
-    color: #D6936D;
+    color: $chocolate;
 
     &:hover {
         text-decoration: underline;
@@ -156,7 +146,7 @@
         display: block;
         height: 1px;
         margin-bottom: 24px;
-        background-color: gray;
+        background-color: #E1E1E1;
 
         @include tablet {
             margin-bottom: 32px;
@@ -168,7 +158,7 @@
         display: block;
         height: 1px;
         margin-top: 24px;
-        background-color: gray;
+        background-color: #E1E1E1;
 
         @include tablet {
             margin-top: 32px;
@@ -181,7 +171,7 @@
 }
 
 .contacts-section__schedule-item {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -204,11 +194,11 @@
 }
 
 .contacts-section__schedule-days {
-    color: #131313;
+    color: $second-text-color;
 }
 
 .contacts-section__schedule-hours {
-    color: #ABABAB;
+    color: $gray;
 }
 
 .contacts-section__phone {
@@ -218,17 +208,17 @@
 .contacts-section__phone,
 .contacts-section__email {
     display: block;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19 / 12);
     letter-spacing: 0.04em;
-    color: #131313;
+    color: $second-text-color;
     transition: var(--transit);
 
     &:hover {
-        color: #0A8817;
+        color: $green;
     }
 
     @include tablet {
@@ -257,15 +247,6 @@
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    gap: 4px;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transit);
-}
-
-.contacts-section__button-icon {
-    width: 12px;
-    height: 12px;
 }
 
 .contacts-section__button--location-button {
@@ -276,11 +257,4 @@
     }
 }
 
-.contacts-section__button--franchise-button {
-    
-}
-
-// delete
-// body {
-//     background: none;
-// }
+.contacts-section__button--franchise-button {}
