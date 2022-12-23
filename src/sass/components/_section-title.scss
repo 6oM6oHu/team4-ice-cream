@@ -1,17 +1,18 @@
 .section-title {
   font-family: 'Seymour One', sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   @include tablet {
     font-size: 34px;
-    letter-spacing: 0.06em;
     line-height: 1.26;
   }
   @include desktop {
     font-size: 36px;
     line-height: 1.25;
+    letter-spacing: 0.06em;
   }
 }
