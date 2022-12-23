@@ -1,5 +1,39 @@
-$transit: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// TEXT-COLORS
+$prime-text-color: #fcfcfc;
+$second-text-color: #131313;
+$address-color: #d6936d;
 
-:root {
-  --transit: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+//BG-COLORS
+$prime-bg-color: #84a178;
+
+$matcha: #aec6a5; // чай матча
+$mustard: #efd478; // гірчиця
+$chocolate: #d6936d; // шоколад
+
+//Круги - circle
+$matcha-circle-grd: linear-gradient(
+    0deg,
+    rgba(156, 190, 143, 0.7),
+    rgba(156, 190, 143, 0.7)
+  ),
+  #d9d9d9;
+$mustard-circle-grd: linear-gradient(
+    0deg,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  ),
+  #d9d9d9;
+$chocolate-circle-grd: linear-gradient(
+    0deg,
+    rgba(213, 117, 63, 0.7),
+    rgba(213, 117, 63, 0.7)
+  ),
+  #d9d9d9;
+
+//Кнопки та соціальні лінкі
+$yellow: #f8d24e;
+$green: #0a8817;
+$gray: #ababab;
+
+// Аніміція
+$transit: 250ms cubic-bezier(0.4, 0, 0.2, 1);

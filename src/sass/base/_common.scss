@@ -25,6 +25,7 @@ body {
     font-size: 14px;
     line-height: 1.214;
   }
+  transition: color $transit;
 
   &:hover {
     color: #0a8817;
