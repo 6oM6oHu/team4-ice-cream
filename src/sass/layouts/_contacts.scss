@@ -240,8 +240,6 @@
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -258,7 +256,4 @@
   @include tablet {
     margin-bottom: 0;
   }
-}
-
-.contacts-section__button--franchise-button {
 }
