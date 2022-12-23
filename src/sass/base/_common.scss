@@ -1,7 +1,29 @@
 body {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   font-size: 16px;
-  letter-spacing: 1.75;
+  letter-spacing: 0.04em;
+  line-height: 1.76;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../images/backgroud-mob-1x.png);
+
+  @include retina {
+    background-image: url(../images/backgroud-mob-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/backgroud-tab-1x.png);
+    @include retina {
+      background-image: url(../images/backgroud-tab-2x.png);
+    }
+  }
+  @include desktop {
+    background-image: url(../images/backgroud-desk-1x.png);
+    @include retina {
+      background-image: url(../images/backgroud-desk-2x.png);
+    }
+  }
 }
 
 .is-hidden {
@@ -25,6 +47,7 @@ body {
     font-size: 14px;
     line-height: 1.214;
   }
+  transition: color $transit;
 
   &:hover {
     color: #0a8817;
