@@ -10,54 +10,89 @@
       </svg>
     </button>
     <h2 class="modal-title">Buy now</h2>
-    <ul class="modal-list">
-      <li class="list-item">
-        <div class="list-item__box square">
-          <h3 class="list-item__title">ice cream</h3>
-        </div>
 
-        <div class="list-item__box round">
-          <span class="list-item__bg"></span>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="list-item__box square">
-          <h3 class="list-item__title">ice coffee</h3>
-        </div>
+    <form class="modal-form" action="">
+      <ul class="modal-list">
+        <li class="list-item">
+          <input
+            class="check-input hidden"
+            type="checkbox"
+            name="product"
+            value="ice cream"
+            id="ice cream"
+          />
+          <label class="check-item" for="ice cream">
+            <div class="list-item__box square">
+              <h3 class="list-item__title">ice cream</h3>
+            </div>
+            <div class="list-item__box round"></div>
+          </label>
+        </li>
+        <li class="list-item">
+          <input
+            class="check-input hidden"
+            type="checkbox"
+            name="product"
+            value="ice coffee"
+            id="ice coffee"
+          />
+          <label class="check-item" for="ice coffee">
+            <div class="list-item__box square">
+              <h3 class="list-item__title">ice coffee</h3>
+            </div>
+            <div class="list-item__box round"></div>
+          </label>
+        </li>
+        <li class="list-item">
+          <input
+            class="check-input hidden"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+            id="milkshake"
+          />
+          <label class="check-item" for="milkshake">
+            <div class="list-item__box square">
+              <h3 class="list-item__title">milkshake</h3>
+            </div>
+            <div class="list-item__box round"></div>
+          </label>
+        </li>
+      </ul>
 
-        <div class="list-item__box round">
-          <span class="list-item__bg"></span>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="list-item__box square">
-          <h3 class="list-item__title">milkshake</h3>
-        </div>
+      <!-- <label class="modal-form__label" for=""
+        >Name</label> -->
+      <input
+        class="modal-form__input"
+        type="text"
+        name="name"
+        placeholder="Name"
+      />
+      <!-- <label class="modal-form__label" for=""
+        >Phone</label> -->
+      <input
+        class="modal-form__input"
+        type="tel"
+        name="tel"
+        placeholder="Phone"
+      />
+      <!-- <label class="modal-form__label" for="">Comment </label> -->
+      <textarea
+        class="modal-form__taxtarea"
+        name="Comment"
+        id=""
+        cols="3"
+        rows=""
+        placeholder="Comment"
+      ></textarea>
 
-        <div class="list-item__box round">
-          <span class="list-item__bg"></span>
-        </div>
-      </li>
-    </ul>
-
-    <!-- <form class="modal-form" action="">
-      <label class="modal-form__label" for=""
-        >Name<input type="text" name="username"
-      /></label>
-      <label class="modal-form__label" for=""
-        >Phone<input type="tel" name="phone_number"
-      /></label>
-      <label class="modal-form__label" for=""
-        >Comment
-        <textarea name="Comment" id="" cols="3" rows=""></textarea> /></label
+      <button
+        class="modal-button modal-button--submit"
+        type="button"
+        data-close-modal
       >
+        Submit
+      </button>
     </form>
-    <button
-      class="modal-button modal-button--submit"
-      type="button"
-      data-close-modal
-    >
-      Submit
-    </button> -->
   </div>
 </div>
