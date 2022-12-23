@@ -1,260 +1,264 @@
+.contacts-section__container {
+  padding-bottom: 40px;
+}
 .contacts-section__title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .contacts-section__list {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    @include tablet {
-        display: flex;
-        gap: 16px;
-        margin-bottom: 40px;
-    }
+  @include tablet {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
 
-    @include desktop {
-        gap: 32px;
-        margin-bottom: 60px;
-    }
+  @include desktop {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts-section__item {
-    max-width: 280px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
+  max-width: 280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background: $prime-text-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include tablet {
+    max-width: 224px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 40px;
-    padding-bottom: 24px;
-    background: $prime-text-color;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+    padding-bottom: 40px;
 
     &:not(:last-child) {
-        margin-bottom: 16px;
+      margin-bottom: 0;
     }
+  }
 
-    @include tablet {
-        max-width: 224px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
-
-    @include desktop {
-        max-width: 368px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+  @include desktop {
+    max-width: 368px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .contacts-section__branch-type {
-    display: inline-block;
-    padding: 4px 22px;
-    margin-bottom: 20px;
-    font-family: 'Montserrat' ,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    text-align: center;
-    letter-spacing: 0.04em;    
-    color: $second-text-color;
-    text-transform: uppercase;
-    background-color: $yellow;
-    border-radius: 4px;
+  display: inline-block;
+  padding: 4px 22px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $second-text-color;
+  text-transform: uppercase;
+  background-color: $yellow;
+  border-radius: 4px;
 
-    @include tablet {
-        font-size: 16px;
-        line-height: calc(22 / 16);
-        padding-left: 13px;
-        padding-right: 13px;
-        border-radius: 6px;
-    }
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 6px;
+  }
 
-    @include desktop {
-        margin-bottom: 32px;
-    }
+  @include desktop {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-section__city {
-    margin-bottom: 8px;
-    font-family: 'Montserrat' ,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    letter-spacing: 0.04em;
-    color: $second-text-color;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+  color: $second-text-color;
 
-    @include tablet {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
 
-    @include desktop {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .contacts-section__address {
-    display: inline-block;
-    margin-bottom: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    letter-spacing: 0.04em;
-    color: $chocolate;
+  display: inline-block;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+  color: $chocolate;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 
-    @include tablet {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-        margin-bottom: 32px;
-    }
-    
-    @include desktop {
-        font-size: 16px;
-        line-height: calc(29 / 16);
-    }
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
 }
 
 .contacts-section__schedule-list {
+  margin-bottom: 24px;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
     margin-bottom: 24px;
+    background-color: #e1e1e1;
 
-    &::before {
-        content: '';
-        display: block;
-        height: 1px;
-        margin-bottom: 24px;
-        background-color: #E1E1E1;
-
-        @include tablet {
-            margin-bottom: 32px;
-        }
+    @include tablet {
+      margin-bottom: 32px;
     }
+  }
 
-    &::after {
-        content: '';
-        display: block;
-        height: 1px;
-        margin-top: 24px;
-        background-color: #E1E1E1;
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 24px;
+    background-color: #e1e1e1;
 
-        @include tablet {
-            margin-top: 32px;
-        }
+    @include tablet {
+      margin-top: 32px;
     }
+  }
 
-    @include desktop {
-        margin-bottom: 32px;
-    }
+  @include desktop {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-section__schedule-item {
-    font-family: 'Montserrat', 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    letter-spacing: 0.04em;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
 
-    &:not(:last-child) {
-        margin-bottom: 8px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
-    @include tablet {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
 
-    @include desktop {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .contacts-section__schedule-days {
-    color: $second-text-color;
+  color: $second-text-color;
 }
 
 .contacts-section__schedule-hours {
-    color: $gray;
+  color: $gray;
 }
 
 .contacts-section__phone {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .contacts-section__phone,
 .contacts-section__email {
-    display: block;
-    font-family: 'Montserrat', 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
-    letter-spacing: 0.04em;
-    color: $second-text-color;
-    transition: var(--transit);
+  display: block;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  letter-spacing: 0.04em;
+  color: $second-text-color;
+  transition: var(--transit);
 
-    &:hover {
-        color: $green;
-    }
+  &:hover {
+    color: $green;
+  }
 
-    @include tablet {
-        font-size: 14px;
-        line-height: calc(21 / 14);
-    }
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
 
-    @include desktop {
-        font-size: 16px;
-        line-height: calc(24 / 16);
-    }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
 }
 
 .contacts-section__buttons-list {
-    @include tablet {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @include tablet {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .contacts-section__button {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .contacts-section__button--location-button {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 
-    @include tablet {
-        margin-bottom: 0;
-    }
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
-.contacts-section__button--franchise-button {}
+.contacts-section__button--franchise-button {
+}
