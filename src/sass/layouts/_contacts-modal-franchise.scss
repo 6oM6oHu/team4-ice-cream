@@ -1,0 +1,75 @@
+.modal-franchise-title {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+      }
+}
+.franch-form__descr {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: calc(20px / 14px);
+    width: 222px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: calc(22px / 16px);
+        width: 448px;
+    }
+}
+
+.franch-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        gap: 16px;
+        margin-bottom: 32px;
+        align-items: center;
+    }
+}
+
+.franch-form__input {
+    width: 100%;
+    height: 32px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $prime-bg-color;
+    border-radius: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(17px / 12px);
+        color: $second-text-color;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+            line-height: calc(20px / 14px);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+        height: 42px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+.franch-form__input--lg {
+    height: 64px;
+    padding-top: 8px;
+    resize: none;
+
+    @media screen and (min-width: 768px) {
+        height: 84px;
+        padding-top: 11px;
+    }
+}

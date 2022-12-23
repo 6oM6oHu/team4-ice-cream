@@ -1,0 +1,43 @@
+<div class="modal modal-contactts" data-modal="modal-franchise">
+
+    <svg class="modal-contactts__cross js-modal-close">
+     <use href="/src/images/icons.svg#icon-close"></use>
+   </svg>
+ 
+    <h2 class="modal-contactts__title modal-franchise-title">Thank you for your interest in owning an Ice Cream shop</h2>
+ 
+    <p class="franch-form__descr">Due to the overwhelming volume of franchise requests we are not accepting new franchisee 
+     applications at this time. Once the application process resumes, we will contact you for 
+     further information. Please fill out the contact information below and we will reach out 
+     for additional information. We appreciate your patience.</p>
+ 
+     <form class="">
+         <div class="franch-form__group">
+             <label class="franch-form__field">
+                 <input
+                   class="franch-form__input" type="text" name="name" placeholder="Name"
+                   required pattern="^[A-Za-z]+\s[A-Za-z]+$"
+                   title="Name must be two words separated by space"/>
+               </label>
+               <label class="franch-form__field">
+                 <input
+                   class="franch-form__input" type="tel" name="phone"
+                   placeholder="Phone" required minlength="12" maxlength="12"
+                   pattern="^(?=.*\d)^.{12,}.*$" title="Мinimum 12 digits"/>
+               </label>
+               <label class="franch-form__field">
+                 <input
+                   class="franch-form__input" type="email" name="email"
+                   placeholder="Email" required />
+               </label>
+               <label>
+                 <textarea
+                   class="franch-form__input franch-form__input--lg"
+                   name="comment" rows="3" placeholder="Comment"></textarea>
+               </label>
+         </div>
+ 
+         <button type="submit" class="btn btn-color modal-contactts__btn">Submit</button>
+ 
+     </form>
+ </div>
