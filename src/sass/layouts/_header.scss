@@ -1,24 +1,15 @@
 .header {
   position: relative;
-  width: auto;
   height: calc(12 + 37 + 12);
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #84a178;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: 480px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  overflow: hidden;
+  @include tablet {
     height: calc(20 + 44 + 20);
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @include desktop {
     height: calc(8 + 65 + 8);
   }
 }
@@ -26,11 +17,11 @@
   width: 40px;
   height: 37px;
   z-index: 31;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 48px;
     height: 44px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 60px;
     height: 65px;
   }
@@ -39,13 +30,13 @@
 .header__nav {
   display: none;
   align-items: center;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
   }
 }
 
-.mob {
-  position: absolute;
+.header__mob-menu {
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -53,27 +44,27 @@
   height: 100%;
   width: 100%;
   padding-top: 100px;
-  z-index: 2;
-  @media screen and (min-width: 480px) {
+  z-index: 3;
+
+  transition: transform 300ms linear, visibility 300ms linear;
+  transform: translateX(50%);
+  visibility: hidden;
+  left: 50%;
+
+  &.is-open {
+    transform: translateX(-50%);
+    visibility: visible;
+    left: 50%;
+  }
+
+  @include mobile {
     width: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 768px;
     padding-top: 140px;
   }
-  &.modal.active {
-    transition: transform 300ms linear;
-    transform: translateX(-50%);
-    left: 50%;
-  }
-  &.modal {
-    transition: transform 300ms linear,
-      opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    left: 50%;
-    transform: translateX(50%);
-  }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }
@@ -86,7 +77,7 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-direction: unset;
     gap: 28px;
   }
@@ -104,7 +95,7 @@
   &:focus {
     color: black;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 16px;
     line-height: calc(20 / 16);
     &:hover,
@@ -127,13 +118,13 @@
   border: none;
   fill: white;
   z-index: 2;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }
 
 .header__menu-button {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     right: 216px;
     top: 29px;
   }
@@ -160,7 +151,7 @@
 
 .header__button-buy {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     left: unset;
     transform: unset;
@@ -168,13 +159,13 @@
     right: 32px;
     z-index: 3;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     position: unset;
   }
 }
 
 .mob__button-buy {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }

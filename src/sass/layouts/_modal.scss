@@ -40,7 +40,7 @@
   right: 12px;
   fill: $second-text-color;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 24px;
     height: 24px;
     top: 17px;
@@ -60,16 +60,21 @@
   &__group {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       gap: 16px;
       margin-bottom: 32px;
       align-items: center;
     }
   }
-  
+  &__field {
+    max-width: 368px;
+    width: 100%;
+  }
   &__input {
     width: 100%;
+    max-width: 368px;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid $prime-bg-color;
     border-radius: 10px;
@@ -77,8 +82,7 @@
     padding-left: 12px;
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-      width: 368px;
+    @include tablet {
       height: 42px;
       padding-right: 16px;
       padding-left: 16px;
@@ -88,7 +92,7 @@
   &__input--lg {
     resize: none;
   
-    @media screen and (min-width: 768px) {
+    @include tablet {
       height: 84px;
       padding-top: 11px;
     }
@@ -103,7 +107,7 @@
     font-size: 12px;
     line-height: calc(15px / 12px);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       font-size: 14px;
       line-height: calc(17px / 14px);
     }
@@ -116,7 +120,7 @@
   font-size: 12px;
   line-height: calc(17px / 12px);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 14px;
     line-height: calc(20px / 14px);
   }
@@ -150,7 +154,7 @@
   font-size: 14px;
   line-height: calc(20px / 14px);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 14px;
     line-height: calc(20px / 14px);
   }
