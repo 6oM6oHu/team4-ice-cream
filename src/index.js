@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
     });
-<<<<<<< HEAD
   });
 
   document.body.addEventListener(
@@ -56,7 +55,3 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 });
-=======
- 
- });
->>>>>>> c390972158bf41238023414b4adf7c34bfb2cd6d
