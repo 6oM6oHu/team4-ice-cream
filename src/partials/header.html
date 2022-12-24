@@ -1,93 +1,95 @@
 <header class="header">
-  <a href="#" class="header__logo">
-    <picture>
-      <source
-        srcset="
-          ./images/header-logo-desk-1x.png 1x,
-          ./images/header-logo-desk-2x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/header-logo-tab-1x.png 1x,
-          ./images/header-logo-tab-2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/header-logo-mob-1x.png 1x,
-          ./images/header-logo-mob-2x.png 2x
-        "
-        media="(min-width: 480px)"
-      />
-      <img src="./images/header-logo-desk-1x.png" alt="logo" />
-    </picture>
-  </a>
+  <div class="container">
+    <a href="#" class="header__logo">
+      <picture>
+        <source
+          srcset="
+            ./images/header-logo-desk-1x.png 1x,
+            ./images/header-logo-desk-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/header-logo-tab-1x.png 1x,
+            ./images/header-logo-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/header-logo-mob-1x.png 1x,
+            ./images/header-logo-mob-2x.png 2x
+          "
+          media="(min-width: 480px)"
+        />
+        <img src="./images/header-logo-desk-1x.png" alt="logo" />
+      </picture>
+    </a>
 
-  <nav class="header__nav">
-    <ul class="header__list">
-      <li class="header__item">
-        <a href="#" class="header__link">Home</a>
-      </li>
-      <li class="header__item">
-        <a href="#howitsmade" class="header__link">How it’s made?</a>
-      </li>
-      <li class="header__item">
-        <a href="#ourproducts" class="header__link">Our products</a>
-      </li>
-      <li class="header__item">
-        <a href="#contact" class="header__link">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#howitsmade" class="header__link">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a href="#ourproducts" class="header__link">Our products</a>
+        </li>
+        <li class="header__item">
+          <a href="#contact" class="header__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-  <button class="header__menu-button">
-    <svg width="32" height="32">
-      <use
-        class="header__menu-open js-open-modal"
-        href="./images/icons.svg#icon-mob-menu"
-        data-modal="mob-menu"
-      ></use>
-    </svg>
-  </button>
-
-  <button type="button" class="header__button-buy js-open-modal">
-    Buy now
-    <svg class="button-icon" width="12" height="12">
-      <use href="/src/images/icons.svg#icon-arrow-right "></use>
-    </svg>
-  </button>
-
-  <!-- ------------------------------modal-------------------------------- -->
-  <div class="mob modal" data-modal="mob-menu">
-    <button class="mob-close js-modal-close">
+    <button class="header__menu-button">
       <svg width="32" height="32">
-        <use href="./images/icons.svg#icon-menu-close"></use>
+        <use
+          class="header__menu-open js-open-modal"
+          href="./images/icons.svg#icon-mob-menu"
+          data-modal="mob-menu"
+        ></use>
       </svg>
     </button>
 
-    <ul class="mob__list">
-      <li class="mob__item">
-        <a href="#" class="mob__link">Home</a>
-      </li>
-      <li class="mob__item">
-        <a href="#howitsmade" class="mob__link">How it’s made?</a>
-      </li>
-      <li class="mob__item">
-        <a href="#ourproducts" class="mob__link">Our products</a>
-      </li>
-      <li class="mob__item">
-        <a href="#contact" class="mob__link">Contact</a>
-      </li>
-    </ul>
-
-    <button type="button" class="mob__button-buy js-open-modal">
+    <button type="button" class="header__button-buy js-open-modal">
       Buy now
       <svg class="button-icon" width="12" height="12">
         <use href="/src/images/icons.svg#icon-arrow-right "></use>
       </svg>
     </button>
+
+    <!-- ------------------------------modal-------------------------------- -->
+    <div class="mob modal" data-modal="mob-menu">
+      <button class="mob-close js-modal-close">
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mob__list">
+        <li class="mob__item">
+          <a href="#" class="mob__link">Home</a>
+        </li>
+        <li class="mob__item">
+          <a href="#howitsmade" class="mob__link">How it’s made?</a>
+        </li>
+        <li class="mob__item">
+          <a href="#ourproducts" class="mob__link">Our products</a>
+        </li>
+        <li class="mob__item">
+          <a href="#contact" class="mob__link">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" class="mob__button-buy js-open-modal">
+        Buy now
+        <svg class="button-icon" width="12" height="12">
+          <use href="/src/images/icons.svg#icon-arrow-right "></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
