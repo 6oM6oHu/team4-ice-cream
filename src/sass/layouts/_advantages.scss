@@ -1,25 +1,13 @@
-.container {
+.advantages-container {
   background: #84a178;
-  min-width: 100%;
+
   @media screen and (max-width: 479px) {
-    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 }
-.advantages-container {
-  // max-width: 100%;
-}
 
-.section-title {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: calc(38 / 30);
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #fcfcfc;
-}
 .advantages-list {
   width: 100%;
   display: flex;
@@ -30,7 +18,7 @@
     padding-bottom: 32px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tablet {
     display: flex;
     flex-direction: row;
     gap: 80px;
@@ -39,8 +27,8 @@
   }
 
   @include desktop {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     gap: 32px;
     max-width: 1168px;
     padding-bottom: 80px;
@@ -53,7 +41,7 @@
   align-items: center;
   gap: 16px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tablet {
     width: calc((100% - 160px) / 3);
     gap: 16px;
   }
@@ -78,7 +66,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tablet {
     font-size: 48px;
     line-height: calc(59 / 48);
   }
@@ -98,7 +86,7 @@
 
   color: #fcfcfc;
   max-width: 230px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tablet {
     max-width: 152px;
     font-weight: 400;
     font-size: 12px;
