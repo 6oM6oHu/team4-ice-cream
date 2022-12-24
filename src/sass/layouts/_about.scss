@@ -102,6 +102,8 @@
     height: 278px;
     flex-shrink: 0;
 
+    transition: transform 1000 linear;
+
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../images/about-cow-mob-1x.png);
@@ -129,6 +131,36 @@
       }
     }
   }
+}
+
+@keyframes shake-top {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 0;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+.about:hover .about__wrap-content::after {
+  animation: shake-top 2s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .about__wrap-info {
