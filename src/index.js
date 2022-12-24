@@ -36,9 +36,4 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.remove('active');
     });
   });
-
-  overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active').classList.remove('active');
-    this.classList.remove('active');
-  });
 });
