@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      document.body.classList.add("no-scroll");
     });
   });
 
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      document.body.classList.remove("no-scroll");
     });
   });
 
