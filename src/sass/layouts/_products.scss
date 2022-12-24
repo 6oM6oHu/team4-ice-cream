@@ -1,7 +1,31 @@
 .products {
 	margin-left: auto;
 	margin-right: auto;
+<<<<<<< Updated upstream
 	
+=======
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/backgroud-mob-1x.png);
+
+	@include retina {
+		background-image: url(../images/backgroud-mob-2x.png);
+	}
+	
+	@include tablet {
+		background-image: url(../images/backgroud-tab-1x.png);
+		@include retina {
+		background-image: url(../images/backgroud-tab-2x.png);
+		}
+	}
+	@include desktop {
+        background-image: url(../images/backgroud-desk-1x.png);
+		@include retina {
+		background-image: url(../images/backgroud-desk-2x.png);
+		}
+	}
+>>>>>>> Stashed changes
 }
 
 .natural-subtitle {
@@ -26,10 +50,13 @@
     text-transform: uppercase;
     color: #131313;
     margin-bottom: 148px;
+<<<<<<< Updated upstream
     @include tablet {
         margin-bottom: 200px;
     
     }
+=======
+>>>>>>> Stashed changes
     @include desktop {
         margin-bottom: 303px;
             }
@@ -48,8 +75,12 @@ justify-content: center;
 
 }
 @include desktop {
+<<<<<<< Updated upstream
     flex-wrap: nowrap;
     gap: 16px;
+=======
+    
+>>>>>>> Stashed changes
 
 }
 }
@@ -57,13 +88,18 @@ justify-content: center;
 
 width: 280px;
   height: 100%;
+<<<<<<< Updated upstream
 
+=======
+  padding-top: 123px;
+>>>>>>> Stashed changes
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   position: relative;
   border-radius: 24px;
+<<<<<<< Updated upstream
 
   @media screen and (max-width: 767px) {
 padding-top: 123px;
@@ -76,17 +112,26 @@ padding-top: 123px;
   }
 
 
+=======
+>>>>>>> Stashed changes
 @include tablet {
    flex-basis: calc((100% - 32px)/3); 
 padding-top: 108px;
 }
 @include desktop {
     flex-basis: calc((100% - 58px)/3);
+<<<<<<< Updated upstream
 padding-top: 165px;
 
 }
 }
 
+=======
+
+}
+
+}
+>>>>>>> Stashed changes
 
 .products-title {
     font-style: normal;
@@ -98,8 +143,14 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #131313;
 margin-bottom: 40px;
+<<<<<<< Updated upstream
 @include desktop {
 
+=======
+// padding-top: 123px;
+@include desktop {
+    padding-top: 165px;
+>>>>>>> Stashed changes
     margin-bottom: 66px;
         }
 
@@ -169,15 +220,24 @@ margin-bottom: 16px;
     background-size: cover;
     position: absolute;
     left: 40px;
+<<<<<<< Updated upstream
     top: -110px;
     display: block;
     z-index: 1;
     // transform: translateY(-20px) scale(1.1);
+=======
+    top: -105px;
+    display: block;
+>>>>>>> Stashed changes
     @include retina {
         background-image: url(../images/products-icecream-tab-2x.png);
       }
       @include tablet {
+<<<<<<< Updated upstream
         top: -117px;
+=======
+        top: -100px;
+>>>>>>> Stashed changes
         left: 12px;
 
       }
@@ -185,11 +245,19 @@ margin-bottom: 16px;
     width: 302px;
     height: 302px;
     left: 34px;
+<<<<<<< Updated upstream
     top: -180px;
     @include retina {
         background-image: url(../images/products-icecream-desk-2x.png);
       }
     background-image: url(../images/products-icecream-desk-1x.png);
+=======
+    top: -151px;
+    @include retina {
+        background-image: url(../images/products-icecoffee-desk-2x.png);
+      }
+    background-image: url(../images/products-iceccoffeedesk-1x.png);
+>>>>>>> Stashed changes
         }
 
     }
@@ -201,6 +269,7 @@ margin-bottom: 16px;
     background-size: cover;
     position: absolute;
     left: 40px;
+<<<<<<< Updated upstream
     top: -110px;
     display: block;
     z-index: 1;
@@ -209,16 +278,34 @@ margin-bottom: 16px;
         @include tablet {
             top: -117px;
             left: 12px;
+=======
+    top: -105px;
+    display: block;
+    @include retina {
+        background-image: url(../images/products-icecoffee-tab-2x.png);}
+        @include tablet {
+        top: -100px;
+        left: 12px;}
+>>>>>>> Stashed changes
 @include desktop {
     width: 302px;
     height: 302px;
     left: 34px;
+<<<<<<< Updated upstream
     top: -180px;}
     @include retina {
         background-image: url(../images/products-icecoffee-desk-2x.png);
 }
 background-image: url(../images/products-icecoffee-desk-1x.png);
 }
+=======
+    top: -151px;
+    @include retina {
+        background-image: url('../images/products-icecoffee-desk-2x.png');
+}
+    background-image: url('../images/products-icecoffee-desk-1x.png');
+        }
+>>>>>>> Stashed changes
 }
 
 .milkshakes-item::before {
@@ -229,13 +316,18 @@ background-image: url(../images/products-icecoffee-desk-1x.png);
     background-size: cover;
     position: absolute;
     left: 40px;
+<<<<<<< Updated upstream
     top: -110px;
     z-index: 1;
+=======
+    top: -105px;
+>>>>>>> Stashed changes
     display: block;
     @include retina {
         background-image: url(../images/products-milkshake-tab-2x.png);
       }
       @include tablet {
+<<<<<<< Updated upstream
         top: -117px;
         left: 12px;
       }
@@ -333,3 +425,94 @@ box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 {
 fill: #FCFCFC;
 }
+=======
+        top: -100px;
+        left: 12px;
+
+      }
+@include desktop {
+    background-image: url(../images/products-milkshake-desk-1x.png);
+}
+    width: 302px;
+    height: 302px;
+    left: 34px;
+    top: -151px;
+    @include retina {
+        background-image: url(../images/products-milkshake-desk-2x.png);
+      }
+
+}
+
+
+// .ice-cream-item::after {
+    //     content: '';
+    //     max-width: 200px;
+    //     max-height: 200px;
+    //     border-radius: 50%;
+    //     position: absolute;
+    // display: block;
+    // top: -33px;
+    // bottom: 277px;
+    // transform: translate(50%, 50%);
+    // background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+// box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+// z-index: 1;}
+
+// .ice-coffee-item::after {
+//     content: '';
+//     width: 200px;
+// height: 200px;
+// position: relative;
+// display: inline-block;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -81%);
+// background-image: url('../images/products-icecoffee-tab-2x.png');
+// background-size: contain;
+// background-repeat: no-repeat;
+// }
+// .ice-coffee-item::before {
+//     content: '';
+//     width: 200px;
+// height: 200px;
+// border-radius: 50%;
+// display: inline-block;
+// position: relative;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%);
+// background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+// box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+// }
+
+// .milkshakes-item::after {
+//     content: '';
+//     width: 200px;
+// height: 200px;
+// display: inline-block;
+// position: relative;
+// top: -550px;
+// left: 50%;
+// transform: translate(-50%, -50%);
+// background-image: url('../images/products-milkshake-tab-2x.png');
+// background-size: contain;
+// background-repeat: no-repeat;
+// }
+// .milkshakes-item::before {
+//     content: '';
+//     width: 200px;
+// height: 200px;
+// border-radius: 50%;
+// display: inline-block;
+// position: relative;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%);
+// background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+// box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+// }
+
+// .products-icon {
+
+// }
+>>>>>>> Stashed changes
