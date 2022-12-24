@@ -54,7 +54,7 @@
 
 //  Forma
 // Фудор основа
-.form{
+.form {
   font-weight: 400;
   color: $second-text-color;
   &__group {
@@ -91,7 +91,7 @@
 
   &__input--lg {
     resize: none;
-  
+
     @include tablet {
       height: 84px;
       padding-top: 11px;
@@ -117,6 +117,7 @@
 // Форма основні змінні
 
 .form-main {
+  width: 100%;
   font-size: 12px;
   line-height: calc(17px / 12px);
 
@@ -129,23 +130,23 @@
       gap: 12px;
     }
   }
-  
+
   &__input {
     @media screen and (max-width: 767px) {
       height: 32px;
     }
   }
-  
+
   &__input--lg {
     @media screen and (max-width: 767px) {
-    height: 64px;
+      height: 64px;
     }
   }
 }
-.form-position-main{
+.form-position-main {
   @media screen and (max-width: 767px) {
     margin-bottom: 26px;
-    }
+  }
 }
 
 // Форма змінні для ingredients
@@ -163,21 +164,21 @@
       gap: 16px;
     }
   }
-  
+
   &__input {
     @media screen and (max-width: 767px) {
       height: 42px;
     }
   }
-  
+
   &__input--lg {
     @media screen and (max-width: 767px) {
-    height: 84px;
+      height: 84px;
     }
   }
 }
-.form-position-ingredients{
+.form-position-ingredients {
   @media screen and (max-width: 767px) {
     margin-bottom: 24px;
-    }
+  }
 }
