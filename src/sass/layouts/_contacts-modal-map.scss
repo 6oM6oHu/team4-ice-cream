@@ -36,6 +36,14 @@
       max-width: 322px;
     }
   }
+
+  &__btn {
+    min-width: 134px;
+
+    @include tablet {
+      min-width: 145px;
+    }
+  }
 }
 .modal-mapa-title {
   margin-bottom: 20px;
