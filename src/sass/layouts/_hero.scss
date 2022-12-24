@@ -108,7 +108,6 @@
     flex-direction: column;
     gap: 12px;
     color: white;
-    fill: white;
   }
   @include desktop {
     bottom: 103px;
@@ -127,6 +126,7 @@
 }
 
 .hero__arrow {
+  fill: white;
 }
 
 .hero__list {
