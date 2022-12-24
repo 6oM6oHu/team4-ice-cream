@@ -165,23 +165,13 @@
 
 .about__text {
   font-size: 12px;
-  line-height: 1.58;
 
   @include tablet {
-    line-height: 1.75;
     text-align: left;
   }
 
   @include desktop {
-    font-size: 14px;
-    line-height: 1.93;
-  }
-  &--start {
-    line-height: 1.75;
-
-    @include desktop {
-      font-size: 16px;
-    }
+    font-size: 16px;
   }
 
   &--last {
@@ -189,11 +179,6 @@
 
     @include tablet {
       display: block;
-      line-height: 1.92;
-    }
-
-    @include desktop {
-      line-height: 1.93;
     }
   }
 }
