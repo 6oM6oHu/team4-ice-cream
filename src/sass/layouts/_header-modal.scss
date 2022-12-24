@@ -6,8 +6,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  //   opacity: 1;
-
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -30,18 +28,9 @@
   min-width: 280px;
   min-height: 991;
   background-color: #fcfcfc;
-
-  //   min-width: 568px;
-  //   min-height: 644px;
-  //   padding: 32px 54px;
-
-  @include mobile {
-    width: 280px;
-  }
+  border-radius: 10px;
 }
 
-.modal-button {
-}
 .modal-button--close {
   position: absolute;
   top: 12px;
@@ -55,139 +44,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: calc(24 / 16);
-
-  //   font-size: 20px;
-  //   line-height: calc(28 / 20);
-}
-.modal-list {
-  display: flex;
-  flex-direction: column;
-  gap: 82px;
-  margin-top: 83px;
 }
 
-// .check-input {
-//   position: absolute;
-//   appearance: none;
-// }
-
-.list-item {
-  position: relative;
-
-  &.list-item:nth-child(1) .square {
-    border: 2px solid #96af8c;
-  }
-
-  &.list-item:nth-child(1) .round {
-    background-color: rgba(156, 190, 143, 0.7);
-    box-shadow: 0px 5.26px 19.73px 0px #0a881740;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 132px;
-      height: 132px;
-      position: absolute;
-
-      top: -7px;
-
-      background-image: url(../images/products-icecream-modal-1x.png);
-      background-size: contain;
-    }
-
-    // &::marker {
-    //   display: none;
-    // }
-  }
-
-  &.list-item:nth-child(2) .square {
-    // background-color: #efd478;
-    border: 2px solid #efd478;
-  }
-
-  &.list-item:nth-child(2) .round {
-    background-color: rgba(248, 210, 78, 0.7);
-    box-shadow: 0px 5.26px 19.73px 0px #99721740;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 132px;
-      height: 132px;
-      position: absolute;
-
-      top: -7px;
-
-      background-image: url(../images/products-icecoffee-modal-1x.png);
-      background-size: contain;
-    }
-  }
-
-  &.list-item:nth-child(3) .square {
-    border: 2px solid #d6936d;
-  }
-
-  &.list-item:nth-child(3) .round {
-    background-color: rgba(213, 117, 63, 0.7);
-    box-shadow: 0px 5.26px 19.73px 0px #00000040;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 132px;
-      height: 132px;
-      position: absolute;
-
-      top: -7px;
-
-      background-image: url(../images/products-milkshake-modal-1x.png);
-      background-size: contain;
-    }
-  }
-}
-
-.list-item__box {
-}
-
-.square {
-  width: 132px;
-  height: 136px;
-  background-color: transparent;
-  border-radius: 15px;
-}
-
-.round {
-  position: absolute;
-  top: -50%;
-
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-}
-
-.list-item__title {
-  padding-top: 96px;
-
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.04em;
-  text-align: center;
-
-  text-transform: uppercase;
-}
-
-// .list-item__bg {
-//   background-image: url(../images/products-icecream-modal-1x.png);
-// }
 .modal-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
 
-  margin-bottom: 26px;
+  gap: 31px;
 
   width: 100%;
 
@@ -195,60 +59,193 @@
   font-size: 12px;
   font-weight: 400;
   line-height: calc(16.8 / 12);
-
-  // margin-top: 31px;
 }
-.modal-form__label {
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 198px;
+
+  padding-top: 179px;
+  padding-bottom: 20px;
 }
-.modal-form__input {
-  padding: 8px 12px;
-  height: 32px;
-  width: 100%;
 
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
+.list-item {
+  position: relative;
+  width: 132px;
+  text-align: center;
 
-  // &::placeholder {
-  //   color: #131313;
-  // }
+  &:nth-child(1) .check-item::after {
+    background-color: rgba(156, 190, 143, 0.7);
+    box-shadow: 0px 5.26px 19.73px 0px #0a881740;
+  }
+  &:nth-child(1) .check-item::before {
+    border: 2px solid rgba(156, 190, 143, 0.7);
+  }
 
-  // & {
-  //   transition: border-color 250ms $transit;
-  //   outline: none;
-  // }
+  &:nth-child(2) .check-item::after {
+    background-color: rgba(248, 210, 78, 0.7);
+    box-shadow: 0px 5.26px 19.73px 0px #99721740;
+  }
+  &:nth-child(2) .check-item::before {
+    border: 2px solid #efd478;
+  }
 
-  // &:focus {
-  //   border-color: $accent;
-  // }
+  &:nth-child(3) .check-item::after {
+    background-color: rgba(213, 117, 63, 0.7);
+    box-shadow: 0px 5.26px 19.73px 0px #00000040;
+  }
+  &:nth-child(3) .check-item::before {
+    border: 2px solid #d6936d;
+  }
+
+  & .check-input {
+    appearance: none;
+  }
+
+  &:nth-child(1) .check-input::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -159;
+
+    width: 132px;
+    height: 132px;
+    background-image: url(../images/products-icecream-modal-1x.png);
+    background-size: contain;
+  }
+
+  &:nth-child(2) .check-input::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -159;
+
+    width: 132px;
+    height: 132px;
+    background-image: url(../images/products-icecoffee-modal-1x.png);
+    background-size: contain;
+  }
+
+  &:nth-child(3) .check-input::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -159;
+
+    width: 132px;
+    height: 132px;
+    background-image: url(../images/products-milkshake-modal-1x.png);
+    background-size: contain;
+  }
 }
-.modal-form__taxtarea {
-  // padding-top: 8px;
-  // padding-left: 12px;
-  padding: 8px 12px;
-  width: 100%;
-  height: 65px;
 
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-
-  resize: none;
+.check-input:checked + .check-item--first::before {
+  background-color: rgba(156, 190, 143, 0.7);
 }
-.modal-button--submit {
-  padding: 12px 34px;
 
-  height: 42px;
-  max-width: 114px;
+.check-input:checked + .check-item--second::before {
+  background-color: rgba(248, 210, 78, 0.7);
+}
+
+.check-input:checked + .check-item--third::before {
+  background-color: rgba(213, 117, 63, 0.7);
+}
+
+.check-item {
+  // padding-top: 96px;
 
   font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: calc(15 / 12);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.04em;
 
-  color: #131313;
-  background-color: #f8d24e;
+  text-transform: uppercase;
 
-  border: transparent;
-  border-radius: 10px;
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -96;
+
+    width: 132px;
+    height: 136px;
+
+    border-radius: 15px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -152;
+
+    width: 132px;
+    height: 132px;
+
+    border-radius: 50%;
+  }
 }
+
+// .form-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 26px;
+
+//   width: 100%;
+// }
+// .input-container {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   gap: 12px;
+// }
+// .modal-form__label {
+// }
+
+// .modal-form__input {
+//   padding: 8px 12px;
+//   height: 32px;
+//   // width: 100%;
+
+//   background-color: rgba(248, 210, 78, 0.1);
+//   border: 1px solid #84a178;
+//   border-radius: 10px;
+// }
+// .modal-form__taxtarea {
+//   // padding-top: 8px;
+//   // padding-left: 12px;
+//   padding: 8px 12px;
+//   width: 100%;
+//   height: 65px;
+
+//   background-color: rgba(248, 210, 78, 0.1);
+//   border: 1px solid #84a178;
+//   border-radius: 10px;
+
+//   resize: none;
+// }
+// .modal-button--submit {
+//   padding: 12px 34px;
+
+//   height: 42px;
+//   max-width: 114px;
+
+//   font-family: Montserrat;
+//   font-size: 12px;
+//   font-weight: 600;
+//   line-height: calc(15 / 12);
+
+//   color: #131313;
+//   background-color: #f8d24e;
+
+//   border: transparent;
+//   border-radius: 10px;
+// }
