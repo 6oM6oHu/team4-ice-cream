@@ -1,0 +1,30 @@
+.modal-franchise-title {
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+.franch-form__descr {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: calc(20px / 14px);
+  width: 100%;
+  text-align: left;
+
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: calc(22px / 16px);
+    width: 448px;
+  }
+}
+
+.form-franhise {
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,184 @@
+.about {
+  background-color: $prime-bg-color;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  text-align: center;
+  color: $prime-text-color;
+
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-bottom: 99px;
+  }
+}
+
+.about__uptitle {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+
+  text-transform: uppercase;
+
+  @include tablet {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.23px;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
+}
+.about__title {
+  display: inline-block;
+  margin-bottom: 32px;
+  max-width: 210px;
+
+  font-weight: 400;
+
+  @include tablet {
+    margin-bottom: 72px;
+    max-width: 100%;
+  }
+  @include desktop {
+    margin-bottom: 82px;
+  }
+}
+
+.about__wrap-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 38px;
+  }
+  @include desktop {
+    gap: 109px;
+  }
+  &::before {
+    content: '';
+    width: 279px;
+    height: 278px;
+    flex-shrink: 0;
+
+    margin-bottom: 62px;
+
+    background: $mustard-circle-grd;
+    border-radius: 140px;
+    box-shadow: 0px 4.49px 16.82px rgba(153, 114, 23, 0.25);
+
+    @include tablet {
+      width: 330px;
+      height: 330px;
+      margin-bottom: 0;
+
+      box-shadow: 0px 5.3px 19.9px rgba(153, 114, 23, 0.25);
+      border-radius: 165px;
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+      border-radius: 250px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 279px;
+    height: 278px;
+    flex-shrink: 0;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/about-cow-mob-1x.png);
+    @include retina {
+      background-image: url(../images/about-cow-mob-2x.png);
+    }
+
+    @include tablet {
+      left: 0;
+      transform: translate(0);
+
+      width: 330px;
+      height: 330px;
+      background-image: url(../images/about-cow-tab-1x.png);
+      @include retina {
+        background-image: url(../images/about-cow-tab-2x.png);
+      }
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+      background-image: url(../images/about-cow-desk-1x.png);
+      @include retina {
+        background-image: url(../images/about-cow-desk-2x.png);
+      }
+    }
+  }
+}
+
+.about__wrap-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  @include tablet {
+    align-items: start;
+
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 54px;
+    padding-right: 105px;
+  }
+}
+
+.about__wrap-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @include tablet {
+    gap: 8px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about__text {
+  font-size: 12px;
+
+  @include tablet {
+    text-align: left;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
+
+  &--last {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}

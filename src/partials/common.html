@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="button">
+    <button type="button" class="btn btn-products btn-transp js-open-modal">
+      Products
+    </button>
+
+    <button type="button" class="btn btn-color btn-read js-open-modal">
+      Read more
+      <svg class="button-icon" width="12" height="12">
+        <use href="/src/images/icons.svg#icon-arrow-right "></use>
+      </svg>
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-color btn-location js-open-modal"
+      data-modal="modal-map"
+    >
+      Our Locations
+      <svg class="button-icon" width="12" height="12">
+        <use href="/src/images/icons.svg#icon-arrow-right "></use>
+      </svg>
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-transp btn-location js-open-modal"
+      data-modal="modal-franchise"
+    >
+      Franchise
+      <svg class="button-icon" width="12" height="12">
+        <use href="/src/images/icons.svg#icon-arrow-right "></use>
+      </svg>
+    </button>
+
+    <button type="button" class="btn btn-color btn-buy-now js-open-modal">
+      Buy now
+      <svg class="button-icon" width="12" height="12">
+        <use href="/src/images/icons.svg#icon-arrow-right "></use>
+      </svg>
+    </button>
+
+    <a href="" class="how-made-link">How it’s made?</a>
+  </div>
+
+  <!-- Хрестик який закриває модалки. Універсальний) Він в горі в правому куті. -->
+
+  <!-- хрестик для модалок, скопіювати в свій HTML. А тут видалити!!! -->
+  <!-- <svg class="modal-btn-cross js-modal-close">
+      <use href="/src/images/icons.svg#icon-close"></use>
+    </svg> -->
+
+  <!-- Форма для всіх)))!!! просто скопіюйте розмітку в свій HTML. А тут видалити!. -->
+  <form class="form form-main">
+    <div class="form__group form-main__group form-position-main">
+      <label class="form__field form-main__field">
+        <input
+          class="form__input form-main__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[A-Za-z]+\s[A-Za-z]+$"
+          title="Name must be two words separated by space"
+        />
+      </label>
+      <label class="form__field form-main__field">
+        <input
+          class="form__input form-main__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          minlength="12"
+          maxlength="12"
+          pattern="^(?=.*\d)^.{12,}.*$"
+          title="Мinimum 12 digits"
+        />
+      </label>
+
+      <textarea
+        class="form__input form-main__input form__input--lg form-main__input--lg"
+        name="comment"
+        rows="3"
+        placeholder="Comment"
+        aria-label="comment"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-color form__btn">Submit</button>
+  </form>
+
+  <!-- Форма для Сереги))))!!!! просто скопіювати в свій HTML. А тут видалити! -->
+
+  <form class="form form-ingredients">
+    <div class="form__group form-ingredients__group form-position-ingredients">
+      <label class="form__field form-ingredients__field">
+        <input
+          class="form__input form-ingredients__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[A-Za-z]+\s[A-Za-z]+$"
+          title="Name must be two words separated by space"
+        />
+      </label>
+      <label class="form__field form-ingredients__field">
+        <input
+          class="form__input form-ingredients__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          minlength="12"
+          maxlength="12"
+          pattern="^(?=.*\d)^.{12,}.*$"
+          title="Мinimum 12 digits"
+        />
+      </label>
+      <textarea
+        class="form__input form-ingredients__input form__input--lg form-ingredients__input--lg"
+        name="comment"
+        rows="3"
+        placeholder="Comment"
+        aria-label="comment"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-color form__btn">Submit</button>
+  </form>
+</div>
