@@ -24,7 +24,7 @@
   font-size: 18px;
   line-height: calc(27 / 18);
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $prime-text-color;
   margin-bottom: 16px;
   letter-spacing: 0.04em;
 
@@ -57,7 +57,7 @@
   line-height: calc(41 / 34);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $prime-text-color;
   margin-bottom: 60px;
 
   @include tablet {
@@ -110,16 +110,16 @@
   font-size: 12px;
   line-height: 1.9;
   text-align: right;
-  color: #131313;
+  color: $second-text-color;
   margin-right: 5px;
 }
-.footer__buttom-text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1;
-  color: #fcfcfc;
-  margin-bottom: 40px;
-}
+// .footer__buttom-text {
+//   font-weight: 700;
+//   font-size: 12px;
+//   line-height: 1;
+//   color: $prime-text-color;
+//   margin-bottom: 40px;
+// }
 .footer-list__item {
   width: 34px;
   height: 34px;
@@ -130,7 +130,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8d24e;
+  background-color: $yellow;
   border-radius: 50%;
   color: $prime-bg-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -140,14 +140,14 @@
 }
 .footer-list__link:hover,
 .footer-list__link:focus {
-  color: white;
+  color: $prime-text-color;
 }
 .footer-section__contact {
   font-weight: 700;
   font-size: 12px;
   line-height: calc(22 / 12);
   text-align: right;
-  color: #131313;
+  color: $second-text-color;
 }
 
 .footer-section__number {
@@ -155,12 +155,14 @@
   font-size: 12px;
   line-height: calc(22 / 12);
   text-align: right;
-  color: white;
+  color: $prime-text-color;
 }
 
 .copywrite__wrap {
-  border-top: 1px solid #e1e1e1;
+  position: relative;
   padding-top: 20px;
+  width: 100%;
+ 
 
   @include tablet {
     padding-top: 12px;
@@ -188,4 +190,27 @@
   @include desktop {
     line-height: calc(22 / 12);
   }
+&::before{
+  content: '';
+  position:absolute;
+  height: 1px;
+  background-color: #e1e1e1;
+  width: calc(100% + 20px * 2);
+  left: -20px;
+  bottom: 82px;
+  @include tablet{
+    width: calc(100% + 32px * 2);
+    left: -32px;
+    bottom: 50px;
+  }
+  @media screen and(min-width:1200px) {
+  
+    width: 100%;
+    left: 0;
+    bottom: 44px;
+  
 }
+}
+
+}
+
