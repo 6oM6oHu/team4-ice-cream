@@ -1,22 +1,22 @@
-.contacts-section__container {
+.contacts-section {
+  padding-top: 40px;
   padding-bottom: 60px;
+  background-image: linear-gradient(to bottom, transparent 27%, #84a178 27%);
+
   @include tablet {
     padding-bottom: 40px;
+    background-image: linear-gradient(to bottom, transparent 48%, #84a178 48%);
   }
+
   @include desktop {
-    padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 120px;
+    background-image: linear-gradient(to bottom, transparent 16%, #84a178 16%);
   }
 }
+
 .contacts-section__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  @extend %visuality-hidden;
 }
 
 .contacts-section__list {
