@@ -1,50 +1,11 @@
-.modal-contactts {
-  text-align: center;
-  max-width: 440px;
-  width: 100%;
-  top: 50px;
-  left: 50%;
-  padding: 26px 26px;
-  transform: translateX(-50%);
-  letter-spacing: normal;
-  background: $prime-text-color;
-  border: 2px solid $yellow;
-  border-radius: 10px;
+.modal-contactts__btn {
+  min-width: 134px;
+
   @include tablet {
-    max-width: 568px;
-    padding: 32px 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__title {
-    font-family: 'Seymour One', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(24px / 16px);
-    display: block;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include tablet {
-      font-size: 20px;
-      line-height: calc(28px / 20px);
-      max-width: 322px;
-    }
-  }
-
-  &__btn {
-    min-width: 134px;
-
-    @include tablet {
-      min-width: 145px;
-    }
+    min-width: 145px;
   }
 }
+
 .modal-mapa-title {
   margin-bottom: 20px;
   @include tablet {
