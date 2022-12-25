@@ -1,15 +1,18 @@
 .gallery {
-  padding-top: 32px;
-  background-image: linear-gradient(to top, transparent 60%, #84a178 60%);
+  // padding-top: 32px;
 
-  @include tablet {
-    padding-top: 60px;
-    background-image: linear-gradient(to top, transparent 45%, #84a178 45%);
-  }
+  &__container {
+    background-image: linear-gradient(to top, transparent 60%, #84a178 60%);
 
-  @include desktop {
-    padding-top: 80px;
-    background-image: linear-gradient(to top, transparent 65%, #84a178 65%);
+    @include tablet {
+      padding-top: 60px;
+      background-image: linear-gradient(to top, transparent 45%, #84a178 45%);
+    }
+
+    @include desktop {
+      padding-top: 80px;
+      background-image: linear-gradient(to top, transparent 65%, #84a178 65%);
+    }
   }
 }
 
