@@ -162,13 +162,17 @@
   position: relative;
   padding-top: 20px;
   width: 100%;
- 
+  border-top: 1px solid #e1e1e1;
+  border-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablet {
     padding-top: 12px;
   }
   @include desktop {
     padding-top: 12px;
+    max-width: 1167px;
   }
 }
 
@@ -190,27 +194,25 @@
   @include desktop {
     line-height: calc(22 / 12);
   }
-&::before{
-  content: '';
-  position:absolute;
-  height: 1px;
-  background-color: #e1e1e1;
-  width: calc(100% + 20px * 2);
-  left: -20px;
-  bottom: 82px;
-  @include tablet{
-    width: calc(100% + 32px * 2);
-    left: -32px;
-    bottom: 50px;
-  }
-  @media screen and(min-width:1200px) {
-  
-    width: 100%;
-    left: 0;
-    bottom: 44px;
-  
-}
-}
+  // &::before{
+  //   content: '';
+  //   position:absolute;
+  //   height: 1px;
+  //   background-color: #e1e1e1;
+  //   width: calc(100% + 20px * 2);
+  //   left: -20px;
+  //   bottom: 82px;
+  //   @include tablet{
+  //     width: calc(100% + 32px * 2);
+  //     left: -32px;
+  //     bottom: 50px;
+  //   }
+  //   @media screen and(min-width:1200px) {
 
-}
+  //     width: 100%;
+  //     left: 0;
+  //     bottom: 44px;
 
+  // }
+  // }
+}
