@@ -1,227 +1,202 @@
 <header class="header">
-  <div class="container">
-    <div class="header__container">
-      <a href="#" class="header__logo">
-        <picture>
-          <source
-            srcset="
-              ./images/header-logo-desk-1x.png 1x,
-              ./images/header-logo-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/header-logo-tab-1x.png 1x,
-              ./images/header-logo-tab-2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/header-logo-mob-1x.png 1x,
-              ./images/header-logo-mob-2x.png 2x
-            "
-            media="(min-width: 480px)"
-          />
-          <img src="./images/header-logo-desk-1x.png" alt="logo" />
-        </picture>
-      </a>
+  <div class="header__dots">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__top">
+          <a href="#" class="header__logo">
+            <picture>
+              <source
+                srcset="
+                  ./images/header-logo-desk-1x.png 1x,
+                  ./images/header-logo-desk-2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/header-logo-tab-1x.png 1x,
+                  ./images/header-logo-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/header-logo-mob-1x.png 1x,
+                  ./images/header-logo-mob-2x.png 2x
+                "
+                media="(min-width: 480px)"
+              />
+              <img
+                src="./images/header-logo-desk-1x.png"
+                alt="logo"
+                width="60"
+              />
+            </picture>
+          </a>
 
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#" class="header__link">Home</a>
-          </li>
-          <li class="header__item">
-            <a href="#howitsmade" class="header__link how-made-link"
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#howitsmade" class="header__link how-made-link"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#products" class="header__link how-made-link"
+                  >Our products</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#contact" class="header__link how-made-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__menu-button js-open-menu js-menu-button">
+            <svg width="32" height="32" class="header__menu-open">
+              <use href="./images/icons.svg#icon-mob-menu"></use>
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="js-open-modal header__button-buy btn btn-color btn-buy-now"
+            data-modal="header-modal"
+          >
+            Buy now
+            <svg class="button-icon" width="12" height="12">
+              <use href="/src/images/icons.svg#icon-arrow-right "></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- ------------------------------modal-------------------------------- -->
+        <div class="header__mob-menu js-menu-container">
+          <button class="mob-close js-close-menu">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mob__list">
+            <li class="mob__item">
+              <a href="#" class="mob__link">Home</a>
+            </li>
+            <li class="mob__item">
+              <a href="#howitsmade" class="mob__link">How it’s made?</a>
+            </li>
+            <li class="mob__item">
+              <a href="#products" class="mob__link">Our products</a>
+            </li>
+            <li class="mob__item">
+              <a href="#contact" class="mob__link">Contact</a>
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="mob__button-buy btn btn-color btn-buy-now js-open-modal"
+            data-modal="header-modal"
+          >
+            Buy now
+            <svg class="button-icon" width="12" height="12">
+              <use href="/src/images/icons.svg#icon-arrow-right "></use>
+            </svg>
+          </button>
+        </div>
+        <!-- ------------------------------HERO-------------------------------- -->
+
+        <section class="hero">
+          <h1 class="hero__title">ice cream made with passion</h1>
+          <div class="hero__buttons">
+            <a
+              href="#products"
+              type="button"
+              class="btn btn-products btn-transp js-open-modal"
+            >
+              Products
+            </a>
+            <a href="#howitsmade?" class="hero__link how-made-link"
               >How it’s made?</a
             >
-          </li>
-          <li class="header__item">
-            <a href="#ourproducts" class="header__link how-made-link"
-              >Our products</a
-            >
-          </li>
-          <li class="header__item">
-            <a href="#contact" class="header__link how-made-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+          </div>
+          <picture class="hero__icecream">
+            <source
+              srcset="
+                ./images/hero-icecream-desk-1x.png 1x,
+                ./images/hero-icecream-desk-2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/hero-icecream-tab-1x.png 1x,
+                ./images/hero-icecream-tab-2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/hero-icecream-mob-1x.png 1x,
+                ./images/hero-icecream-mob-2x.png 2x
+              "
+              media="(min-width: 480px)"
+            />
 
-      <button class="header__menu-button js-open-menu js-menu-button">
-        <svg width="32" height="32">
-          <use
-            class="header__menu-open"
-            href="./images/icons.svg#icon-mob-menu"
-          ></use>
-        </svg>
-      </button>
+            <img src="./images/hero-icecream-desk-1x.png" alt="icecream" />
+          </picture>
 
-      <!-- <button
-        type="button"
-        class="header__button-buy btn btn-color btn-buy-now js-open-modal"
-        data-modal="header-modal"
-      >
-        Buy now
-        <svg class="button-icon" width="12" height="12">
-          <use href="/src/images/icons.svg#icon-arrow-right "></use>
-        </svg>
-      </button> -->
+          <picture
+            class="hero__dish"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <source
+              srcset="
+                ./images/hero-dish-desk-1x.png 1x,
+                ./images/hero-dish-desk-2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/hero-dish-tab-1x.png 1x,
+                ./images/hero-dish-tab-2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
 
-      <button
-        type="button"
-        class="js-open-modal header__button-buy btn btn-color btn-buy-now"
-        data-modal="header-modal"
-      >
-        Buy now
-        <svg class="button-icon" width="12" height="12">
-          <use href="/src/images/icons.svg#icon-arrow-right "></use>
-        </svg>
-      </button>
-
-      <!-- ------------------------------modal-------------------------------- -->
-      <div class="header__mob-menu js-menu-container">
-        <button class="mob-close js-close-menu">
-          <svg width="32" height="32">
-            <use href="./images/icons.svg#icon-menu-close"></use>
-          </svg>
-        </button>
-
-        <ul class="mob__list">
-          <li class="mob__item">
-            <a href="#" class="mob__link">Home</a>
-          </li>
-          <li class="mob__item">
-            <a href="#howitsmade" class="mob__link">How it’s made?</a>
-          </li>
-          <li class="mob__item">
-            <a href="#ourproducts" class="mob__link">Our products</a>
-          </li>
-          <li class="mob__item">
-            <a href="#contact" class="mob__link">Contact</a>
-          </li>
-        </ul>
-
-        <button
-          type="button"
-          class="mob__button-buy js-open-modal"
-          data-modal="header-modal"
-        >
-          Buy now
-          <svg class="button-icon" width="12" height="12">
-            <use href="/src/images/icons.svg#icon-arrow-right "></use>
-          </svg>
-        </button>
+            <img src="./images/hero-dish-desk-1x.png" alt="dish" />
+          </picture>
+          <div class="hero__block">
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <a href="#" class="hero__arrow">
+              <svg width="40" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="hero__list">
+            <li class="hero_item">
+              <p class="hero__figure">16</p>
+              <p class="hero__figureText">cafes</p>
+            </li>
+            <li>
+              <p class="hero__figure">23</p>
+              <p class="hero__figureText">food trucks</p>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
-    <!-- ------------------------------HERO-------------------------------- -->
-
-    <section class="hero">
-      <h1 class="hero__title">ice cream made with passion</h1>
-      <div class="hero__buttons">
-        <a
-          href="#products"
-          type="button"
-          class="btn btn-products btn-transp js-open-modal"
-        >
-          Products
-        </a>
-        <a href="#howitsmade?" class="hero__link how-made-link"
-          >How it’s made?</a
-        >
-      </div>
-      <picture class="hero__icecream">
-        <source
-          srcset="
-            ./images/hero-icecream-desk-1x.png 1x,
-            ./images/hero-icecream-desk-2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero-icecream-tab-1x.png 1x,
-            ./images/hero-icecream-tab-2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/hero-icecream-mob-1x.png 1x,
-            ./images/hero-icecream-mob-2x.png 2x
-          "
-          media="(min-width: 480px)"
-        />
-
-        <img src="./images/hero-icecream-mob-1x.png" alt="icecream" />
-      </picture>
-
-      <picture class="hero__dots">
-        <source
-          srcset="
-            ./images/hero-dots-desk-1x-min.png 1x,
-            ./images/hero-dots-desk-2x-min.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero-dots-tab-1x-min.png 1x,
-            ./images/hero-dots-tab-2x-min.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/hero-dots-mob-1x-min.png 1x,
-            ./images/hero-dots-mob-2x-min.png 2x
-          "
-          media="(min-width: 480px)"
-        />
-
-        <img src="./images/hero-dots-mob-1x-min.png" alt="dots" />
-      </picture>
-
-      <picture class="hero__dish">
-        <source
-          srcset="
-            ./images/hero-dish-desk-1x.png 1x,
-            ./images/hero-dish-desk-2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero-dish-tab-1x.png 1x,
-            ./images/hero-dish-tab-2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-
-        <img src="./images/hero-dish-desk-1x.png" alt="dish" />
-      </picture>
-      <div class="hero__block">
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <a href="#" class="hero__arrow">
-          <svg width="40" height="16">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-        </a>
-      </div>
-      <ul class="hero__list">
-        <li class="hero_item">
-          <p class="hero__figure">16</p>
-          <p class="hero__figureText">cafes</p>
-        </li>
-        <li>
-          <p class="hero__figure">23</p>
-          <p class="hero__figureText">food trucks</p>
-        </li>
-      </ul>
-    </section>
   </div>
 </header>
