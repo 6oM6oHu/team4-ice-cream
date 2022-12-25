@@ -37,10 +37,6 @@ body {
   // color: #f8d24e;
   // text-decoration: underline;
 
-  @include desktop {
-    font-size: 14px;
-    line-height: 1.214;
-  }
   transition: color $transit;
 
   &:hover {

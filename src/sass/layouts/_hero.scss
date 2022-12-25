@@ -59,6 +59,7 @@
 }
 
 .hero__link {
+  min-width: 120px;
   font-size: 12px;
   line-height: 15px;
   display: flex;
@@ -67,6 +68,11 @@
   text-decoration-line: underline;
 
   color: #f8d24e;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .hero__icecream {
