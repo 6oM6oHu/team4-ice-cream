@@ -6,16 +6,18 @@
 }
 
 .footer-section {
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   @include tablet {
-    padding-bottom: 12px;
+    // padding-bottom: 12px;
   }
 }
 .footer-section__container {
   // background-color: $prime-bg-color;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -42,8 +44,10 @@
 }
 
 .title-wrap {
+  margin-bottom: 60px;
   @include tablet {
     width: 352px;
+    margin-bottom: 0;
   }
   @include desktop {
     width: 504px;
@@ -58,29 +62,33 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $prime-text-color;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 
   @include tablet {
     font-size: 48px;
     line-height: calc(59 / 48);
     letter-spacing: 0.06em;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
   }
 
   @include desktop {
     font-size: 58px;
     line-height: calc(71 / 58);
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
 .footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include tablet {
-    padding-top: 63px;
+    // padding-top: 63px;
   }
 
   @include desktop {
-    padding-top: 18px;
+    // padding-top: 18px;
+    justify-content: flex-start;
   }
 }
 
@@ -101,8 +109,21 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: right;
+  margin-left: auto;
+  // justify-content: right;
+  // margin-bottom: 40px;
+}
+
+.footer-section {
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-section__contact {
@@ -160,7 +181,7 @@
 
 .copywrite__wrap {
   position: relative;
-  padding-top: 20px;
+  padding: 20px 0;
   width: 100%;
   border-top: 1px solid #e1e1e1;
   border-width: 100%;
@@ -168,7 +189,7 @@
   margin-right: auto;
 
   @include tablet {
-    padding-top: 12px;
+    padding: 12px 0;
   }
   @include desktop {
     padding-top: 12px;
