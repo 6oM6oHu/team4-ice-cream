@@ -15,8 +15,8 @@
   } else {
    var iframesLazy = document.querySelector('iframe.iframe-youtube-lazy-video');
    for (var i = 0; i < iframesLazy.length; i++) {
-    if (lazyVids[i].getAttribute('data-src')) {
-     lazyVids[i].setAttribute('src', lazyVids[i].getAttribute('data-src'));
+    if (lazyVids[i].getAttribute('src')) {
+     lazyVids[i].setAttribute('src', lazyVids[i].getAttribute('src'));
     }
    }
   }
