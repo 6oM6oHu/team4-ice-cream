@@ -1,0 +1,171 @@
+.header {
+  position: relative;
+  height: calc(12 + 37 + 12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #84a178;
+  overflow: hidden;
+  @include tablet {
+    height: calc(20 + 44 + 20);
+  }
+  @include desktop {
+    height: calc(8 + 65 + 8);
+  }
+}
+.header__logo {
+  width: 40px;
+  height: 37px;
+  z-index: 31;
+  @include tablet {
+    width: 48px;
+    height: 44px;
+  }
+  @include desktop {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+.header__nav {
+  display: none;
+  align-items: center;
+  @include desktop {
+    display: flex;
+  }
+}
+
+.header__mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: #84a178;
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 3;
+
+  transition: transform 300ms linear, visibility 300ms linear;
+  transform: translateX(50%);
+  visibility: hidden;
+  left: 50%;
+
+  &.is-open {
+    transform: translateX(-50%);
+    visibility: visible;
+    left: 50%;
+  }
+
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    padding-top: 140px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__list,
+.mob__list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  @include desktop {
+    flex-direction: unset;
+    gap: 28px;
+  }
+}
+
+.header__link,
+.mob__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(39 / 32);
+  color: #fcfcfc;
+  &:hover,
+  &:focus {
+    color: black;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    &:hover,
+    &:focus {
+      color: #f8d24e;
+    }
+  }
+}
+
+.header__menu-button,
+.mob-close {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  fill: white;
+  z-index: 2;
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__menu-button {
+  @include tablet {
+    right: 216px;
+    top: 29px;
+  }
+}
+
+.header__button-buy,
+.mob__button-buy {
+  position: absolute;
+  bottom: 64px;
+  width: 152px;
+  height: 42px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  z-index: 3;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}
+
+.header__button-buy {
+  display: none;
+  @include tablet {
+    display: block;
+    left: unset;
+    transform: unset;
+    top: 24px;
+    right: 32px;
+    z-index: 3;
+  }
+  @include desktop {
+    position: unset;
+  }
+}
+
+.mob__button-buy {
+  @include tablet {
+    display: none;
+  }
+}
