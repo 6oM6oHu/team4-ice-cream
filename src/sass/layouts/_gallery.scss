@@ -1,0 +1,44 @@
+.gallery {
+  padding-top: 32px;
+  background-image: linear-gradient(to top, transparent 60%, #84a178 60%);
+
+  @include tablet {
+    padding-top: 60px;
+    background-image: linear-gradient(to top, transparent 45%, #84a178 45%);
+  }
+
+  @include desktop {
+    padding-top: 80px;
+    background-image: linear-gradient(to top, transparent 65%, #84a178 65%);
+  }
+}
+
+.slider-gallery__img {
+  margin: 0 auto;
+  border-radius: 8px;
+
+  @include tablet {
+    border-radius: 18px;
+  }
+
+  @include desktop {
+    border-radius: 24px;
+  }
+}
+
+// анімація
+
+// Обнулення стрілок для переключення в css
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
+}
