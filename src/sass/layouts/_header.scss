@@ -58,6 +58,7 @@
   padding-top: 100px;
   z-index: 3;
   min-height: 500px;
+  overflow: auto;
 
   transition: transform 300ms linear, visibility 300ms linear;
   transform: translateX(50%);
