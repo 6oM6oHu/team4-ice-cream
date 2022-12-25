@@ -1,5 +1,11 @@
+.section {
+  width: 100%;
+  &__footer {
+    background-color: $prime-bg-color;
+  }
+}
+
 .footer-section {
-  background-color: $prime-bg-color;
   padding-bottom: 20px;
   @include tablet {
     padding-bottom: 12px;

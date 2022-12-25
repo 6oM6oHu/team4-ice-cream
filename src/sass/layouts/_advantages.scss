@@ -1,6 +1,10 @@
+.section {
+  width: 100%;
+  &__advantages {
+    background: $prime-bg-color;
+  }
+}
 .advantages-container {
-  background: #84a178;
-
   @media screen and (max-width: 479px) {
     display: flex;
     flex-direction: column;

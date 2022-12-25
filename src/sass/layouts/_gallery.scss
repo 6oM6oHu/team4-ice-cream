@@ -1,7 +1,7 @@
 .gallery {
-  // padding-top: 32px;
+  width: 100%;
 
-  &__container {
+  & {
     background-image: linear-gradient(to top, transparent 60%, #84a178 60%);
 
     @include tablet {
