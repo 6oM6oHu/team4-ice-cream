@@ -1,28 +1,33 @@
-.reviews{
-    @include sectionSet ($p-top: 80px, $p-bot: 40px);
+.reviews {
+    @include sectionSet ($p-top: 80px, $p-bot: 64px);
 
-    @include tablet{
+    @include tablet {
         @include sectionSet ($p-top: 100px, $p-bot: 80px)
     }
+
     @include desktop {
         @include sectionSet ($p-top: 140px, $p-bot: 144px)
     }
 }
+
 .reviews__title {
     @extend %visuality-hidden;
 }
+
 .reviews__img-thumb {
 
     margin-bottom: 32px;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 44px;
+    overflow: hidden;
     background: #6E6E6E;
     width: 85px;
     margin-left: auto;
     margin-right: auto;
 
-}.reviews__card {
+}
+
+.reviews__card {
     text-align: center;
 }
 
@@ -75,7 +80,7 @@
     color: #131313;
     line-height: calc(37.2px/20px);
 
-    @include tablet{
+    @include tablet {
         font-weight: 16;
         line-height: calc(29.76px / 16px);
     }
@@ -85,6 +90,7 @@
 .slick-dotted.slick-slider {
     margin: 0;
 }
+
 .slick-dots {
     position: absolute;
     bottom: -25px;
@@ -97,6 +103,7 @@
     list-style: none;
     text-align: center;
 }
+
 .slick-dots li {
     position: relative;
     display: inline-block;
@@ -106,6 +113,7 @@
     height: 12px;
     cursor: pointer;
 }
+
 .slick-dots li button {
     font-size: 0;
     line-height: 0;

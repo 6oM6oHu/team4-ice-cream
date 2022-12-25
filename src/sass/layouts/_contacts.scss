@@ -1,10 +1,10 @@
 .contacts-section {
   padding-bottom: 60px;
-  background-image: linear-gradient(to bottom, transparent 27%, #84a178 27%);
+  background-image: linear-gradient(to bottom, transparent 25%, #84a178 25%);
 
   @include tablet {
     padding-bottom: 40px;
-    background-image: linear-gradient(to bottom, transparent 48%, #84a178 48%);
+    background-image: linear-gradient(to bottom, transparent 45%, #84a178 45%);
   }
 
   @include desktop {
