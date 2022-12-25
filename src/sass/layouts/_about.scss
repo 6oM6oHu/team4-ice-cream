@@ -49,8 +49,6 @@
 }
 
 .about__wrap-content {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +60,12 @@
   @include desktop {
     gap: 109px;
   }
+}
+
+.about__wrap-image {
+  position: relative;
+  display: flex;
+
   &::before {
     content: '';
     width: 279px;
@@ -95,14 +99,10 @@
     content: '';
     position: absolute;
     top: 29px;
-    left: 50%;
-    transform: translate(-50%);
 
-    width: 279px;
-    height: 278px;
+    width: 100%;
+    height: 100%;
     flex-shrink: 0;
-
-    transition: transform 1000 linear;
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,10 +111,13 @@
       background-image: url(../images/about-cow-mob-2x.png);
     }
 
-    @include tablet {
+    @include mobile {
       left: 0;
-      transform: translate(0);
+      width: 279px;
+      height: 278px;
+    }
 
+    @include tablet {
       width: 330px;
       height: 330px;
       background-image: url(../images/about-cow-tab-1x.png);
@@ -159,8 +162,8 @@
     transform: rotate(2deg);
   }
 }
-.about:hover .about__wrap-content::after {
-  animation: shake-top 2s cubic-bezier(0.4, 0, 0.2, 1) both;
+.start-animation.about__wrap-image::after {
+  animation: shake-top 2000ms cubic-bezier(0.4, 0, 0.2, 1) 300ms both;
 }
 
 .about__wrap-info {
