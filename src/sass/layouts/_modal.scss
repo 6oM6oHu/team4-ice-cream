@@ -8,7 +8,7 @@
   height: 100%;
   padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
+  z-index: 35;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -20,6 +20,43 @@
   z-index: 30;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+  top: 50px;
+  left: 50%;
+  padding: 26px;
+  transform: translateX(-50%);
+  letter-spacing: normal;
+  background: $prime-text-color;
+  border: 2px solid $yellow;
+  border-radius: 10px;
+  @include tablet {
+    max-width: 568px;
+    padding: 32px 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24px / 16px);
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: calc(28px / 20px);
+      max-width: 322px;
+    }
+  }
 }
 
 .modal.active,
@@ -54,7 +91,7 @@
 
 //  Forma
 // Фудор основа
-.form{
+.form {
   font-weight: 400;
   color: $second-text-color;
   &__group {
@@ -91,7 +128,7 @@
 
   &__input--lg {
     resize: none;
-  
+
     @include tablet {
       height: 84px;
       padding-top: 11px;
@@ -117,6 +154,7 @@
 // Форма основні змінні
 
 .form-main {
+  width: 100%;
   font-size: 12px;
   line-height: calc(17px / 12px);
 
@@ -129,23 +167,23 @@
       gap: 12px;
     }
   }
-  
+
   &__input {
     @media screen and (max-width: 767px) {
       height: 32px;
     }
   }
-  
+
   &__input--lg {
     @media screen and (max-width: 767px) {
-    height: 64px;
+      height: 64px;
     }
   }
 }
-.form-position-main{
+.form-position-main {
   @media screen and (max-width: 767px) {
     margin-bottom: 26px;
-    }
+  }
 }
 
 // Форма змінні для ingredients
@@ -163,21 +201,21 @@
       gap: 16px;
     }
   }
-  
+
   &__input {
     @media screen and (max-width: 767px) {
       height: 42px;
     }
   }
-  
+
   &__input--lg {
     @media screen and (max-width: 767px) {
-    height: 84px;
+      height: 84px;
     }
   }
 }
-.form-position-ingredients{
+.form-position-ingredients {
   @media screen and (max-width: 767px) {
     margin-bottom: 24px;
-    }
+  }
 }
