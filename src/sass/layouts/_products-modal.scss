@@ -1,0 +1,144 @@
+.products-modal {
+  padding: 26px 18px;
+
+  @include tablet {
+    padding: 30px 38px;
+    transform: translate(-50%, 0);
+    top: 50px;
+  }
+  @include desktop {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.products-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  line-height: calc(29 / 20);
+  @include tablet {
+    line-height: calc(28 / 20);
+    margin-bottom: 24px;
+  }
+}
+
+.round {
+  position: relative;
+  margin-bottom: 24px;
+  width: 132px;
+  height: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: $matcha-circle-grd;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+  &::before {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/products-chocolate-modal-1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+}
+.circle-cream {
+}
+.energy-list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  gap: 8px;
+
+  color: #131313;
+
+  @include tablet {
+    gap: 20px;
+  }
+
+  &__item {
+    width: 53px;
+    height: 72px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    border: 2px solid $matcha;
+    border-radius: 40px;
+
+    @include tablet {
+      width: 65px;
+      height: 90px;
+    }
+  }
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    background-color: $matcha;
+    //   border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    margin-bottom: 6px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(28 / 10);
+
+    @include tablet {
+      width: 53px;
+      height: 53px;
+      font-size: 12px;
+      line-height: calc(28 / 12);
+    }
+  }
+
+  &__text {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @include tablet {
+      font-size: 12px;
+      line-height: calc(15 / 12);
+    }
+  }
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 24);
+  margin-bottom: 24px;
+}
+.ingred-list {
+  margin-bottom: 48px;
+
+  font-size: 14px;
+  line-height: calc(25 / 14);
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+  &__text {
+  }
+
+  &__heft {
+  }
+}
+
+.product__form {
+  gap: 16px;
+}
