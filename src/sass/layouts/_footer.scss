@@ -1,11 +1,12 @@
 .footer-section {
+  background-color: $prime-bg-color;
   padding-bottom: 20px;
   @include tablet {
     padding-bottom: 12px;
   }
 }
 .footer-section__container {
-  background-color: $prime-bg-color;
+  // background-color: $prime-bg-color;
   @include tablet {
     display: flex;
     justify-content: space-between;
