@@ -14,7 +14,6 @@
 // По бажанню
 @mixin sectionSet($p-top: 60px, $p-bot: 60px, $text-aln: center) {
   margin: 0 auto;
-  max-width: 1600px;
   padding-top: $p-top;
   padding-bottom: $p-bot;
   text-align: $text-aln;
