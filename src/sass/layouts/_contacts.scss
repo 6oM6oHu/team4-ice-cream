@@ -1,5 +1,11 @@
 .contacts-section__container {
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-bottom: 80px;
+  }
 }
 .contacts-section__title {
   position: absolute;
