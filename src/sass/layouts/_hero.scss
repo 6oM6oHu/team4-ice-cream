@@ -1,8 +1,9 @@
 .hero {
+  width: 100%;
   padding-top: 50px;
   overflow: hidden;
   @include tablet {
-    padding-top: 16px;
+    padding-top: 8px;
   }
   @include desktop {
     padding-top: 45px;
@@ -38,6 +39,7 @@
   font-style: normal;
   font-weight: 600;
   gap: 12px;
+  // z-index: 2;
 }
 
 .hero__button {
@@ -49,6 +51,7 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   color: #000000;
+  z-index: 3;
 
   border: 2px solid #f8d24e;
   border-radius: 8px;
@@ -62,6 +65,7 @@
   align-items: center;
   text-align: center;
   text-decoration-line: underline;
+  z-index: 1;
 
   color: #f8d24e;
 
@@ -73,17 +77,14 @@
 
 .hero__icecream {
   position: absolute;
-  right: 60px;
+  right: 53%;
+  transform: translate(50%);
   bottom: 0;
   z-index: 2;
   @include tablet {
-    right: 92px;
+    transform: unset;
+    right: 68px;
   }
-}
-.hero__dots {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .hero__dish {
@@ -91,12 +92,10 @@
   @include tablet {
     position: absolute;
     display: block;
-    left: 32px;
+    left: 0;
     bottom: 12px;
   }
-
   @include desktop {
-    left: 16px;
     bottom: 65px;
   }
 }
@@ -105,7 +104,7 @@
   display: none;
   @include tablet {
     position: absolute;
-    left: 216px;
+    left: 184px;
     bottom: 24px;
     display: flex;
     flex-direction: column;
@@ -137,7 +136,7 @@
   @include tablet {
     position: absolute;
     top: 94px;
-    right: 32px;
+    right: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -146,6 +145,7 @@
     gap: 16px;
   }
 }
+
 .hero_item {
   display: flex;
   flex-direction: column;
