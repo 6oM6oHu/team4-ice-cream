@@ -1,6 +1,33 @@
 .header {
+  background-color: rgb(132, 161, 120);
+  width: 100%;
+  height: 100%;
+}
+
+.header__dots {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero-dots-mob-2x-min.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    background-image: url(../images/hero-dots-tab-2x-min.png);
+  }
+  @include desktop {
+    width: 1200px;
+    background-image: url(../images/hero-dots-desk-2x-min.png);
+  }
+}
+
+.header__container {
   position: relative;
-  background-color: #84a178;
   margin-left: auto;
   margin-right: auto;
   padding-top: 12px;
@@ -15,28 +42,30 @@
   }
   @include desktop {
     height: 664px;
-    max-width: 1200px;
+    max-width: 100%;
   }
+  overflow: hidden;
 }
 
-.header__container {
-  // position: relative;
-  height: 50px;
+.header__top {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-  padding-top: 0;
-  @include tablet {
-    height: 100%;
-    // height: calc(20 + 44 + 20);
-  }
-  @include desktop {
-    // height: calc(8 + 65 + 8);
-  }
+  justify-content: space-between;
 }
+
 .header__logo {
+  width: 40px;
+  height: 38px;
   z-index: 31;
+  @include mobile {
+    width: unset;
+    height: unset;
+  }
+  @include tablet {
+    width: 44px;
+    height: 48px;
+  }
 }
 
 .header__nav {
@@ -121,6 +150,28 @@
 
 .header__menu-button,
 .mob-close {
+  background-color: transparent;
+  border: none;
+  fill: white;
+  @include tablet {
+    margin-left: auto;
+    margin-right: 32px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__menu-button {
+  width: 32px;
+  height: 32px;
+  @include tablet {
+    right: 216px;
+    top: 29px;
+  }
+}
+
+.mob-close {
   position: absolute;
   top: 17px;
   right: 20px;
@@ -128,57 +179,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: none;
-  fill: white;
-  z-index: 2;
-  @include desktop {
-    display: none;
-  }
-}
-
-.header__menu-button {
-  @include tablet {
-    right: 216px;
-    top: 29px;
-  }
-}
-
-.header__button-buy,
-.mob__button-buy {
-  position: absolute;
-  bottom: 64px;
-  width: 152px;
-  height: 42px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #f8d24e;
-  border-radius: 10px;
-  border: none;
-  z-index: 4;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(17 / 14);
 }
 
 .header__button-buy {
   display: none;
   @include tablet {
-    display: block;
-    left: unset;
-    transform: unset;
-    top: 24px;
-    right: 32px;
-    z-index: 40;
-  }
-  @include desktop {
-    position: unset;
+    margin-right: 0;
+    display: flex;
   }
 }
 
 .mob__button-buy {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @include tablet {
     display: none;
   }
