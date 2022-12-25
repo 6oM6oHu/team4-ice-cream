@@ -1,16 +1,11 @@
 .hero {
-  position: relative;
-  background-color: #84a178;
   padding-top: 50px;
-  height: 502px;
   overflow: hidden;
   @include tablet {
-    height: calc(415 - 20 - 44 - 20);
-    padding-top: 0px;
+    padding-top: 16px;
   }
   @include desktop {
     padding-top: 45px;
-    height: 664px;
   }
 }
 
@@ -141,7 +136,7 @@
   display: none;
   @include tablet {
     position: absolute;
-    top: calc(94 - 20 - 44 - 20);
+    top: 94px;
     right: 32px;
     display: flex;
     flex-direction: column;

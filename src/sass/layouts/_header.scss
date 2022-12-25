@@ -1,30 +1,42 @@
 .header {
   position: relative;
-  height: calc(12 + 37 + 12);
+  background-color: #84a178;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  height: 502px;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    padding-top: 20px;
+    height: 415px;
+    max-width: 768px;
+  }
+  @include desktop {
+    height: 664px;
+    max-width: 1200px;
+  }
+}
+
+.header__container {
+  // position: relative;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #84a178;
   overflow: hidden;
+  padding-top: 0;
   @include tablet {
-    height: calc(20 + 44 + 20);
+    height: 100%;
+    // height: calc(20 + 44 + 20);
   }
   @include desktop {
-    height: calc(8 + 65 + 8);
+    // height: calc(8 + 65 + 8);
   }
 }
 .header__logo {
-  width: 40px;
-  height: 37px;
   z-index: 31;
-  @include tablet {
-    width: 48px;
-    height: 44px;
-  }
-  @include desktop {
-    width: 60px;
-    height: 65px;
-  }
 }
 
 .header__nav {
@@ -45,6 +57,8 @@
   width: 100%;
   padding-top: 100px;
   z-index: 3;
+  min-height: 500px;
+  overflow: auto;
 
   transition: transform 300ms linear, visibility 300ms linear;
   transform: translateX(50%);
@@ -141,7 +155,7 @@
   background: #f8d24e;
   border-radius: 10px;
   border: none;
-  z-index: 3;
+  z-index: 4;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -157,7 +171,7 @@
     transform: unset;
     top: 24px;
     right: 32px;
-    z-index: 3;
+    z-index: 40;
   }
   @include desktop {
     position: unset;
