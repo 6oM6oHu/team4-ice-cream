@@ -141,7 +141,8 @@
 
 .ice-cream-item::before {
   content: '';
-  background-image: url(../images/products-icecream-tab-1x.png);
+  background-image: url(../images/products-icecream-tab-1x.jpg);
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -151,7 +152,7 @@
   display: block;
   z-index: 1;
   @include retina {
-    background-image: url(../images/products-icecream-tab-2x.png);
+    background-image: url(../images/products-icecream-tab-2x.jpg);
   }
   @include tablet {
     top: -117px;
@@ -163,14 +164,15 @@
     left: 34px;
     top: -180px;
     @include retina {
-      background-image: url(../images/products-icecream-desk-2x.png);
+      background-image: url(../images/products-icecream-desk-2x.jpg);
     }
-    background-image: url(../images/products-icecream-desk-1x.png);
+    background-image: url(../images/products-icecream-desk-1x.jpg);
   }
 }
 .ice-coffee-item::before {
   content: '';
-  background-image: url(../images/products-icecoffee-tab-1x.png);
+  background-image: url(../images/products-icecoffee-tab-1x.jpg);
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -180,7 +182,7 @@
   display: block;
   z-index: 1;
   @include retina {
-    background-image: url(../images/products-icecoffee-tab-1x.png);
+    background-image: url(../images/products-icecoffee-tab-1x.jpg);
   }
   @include tablet {
     top: -117px;
@@ -192,15 +194,16 @@
       top: -180px;
     }
     @include retina {
-      background-image: url(../images/products-icecoffee-desk-2x.png);
+      background-image: url(../images/products-icecoffee-desk-2x.jpg);
     }
-    background-image: url(../images/products-icecoffee-desk-1x.png);
+    background-image: url(../images/products-icecoffee-desk-1x.jpg);
   }
 }
 
 .milkshakes-item::before {
   content: '';
-  background-image: url(../images/products-milkshake-tab-1x.png);
+  background-image: url(../images/products-milkshake-tab-1x.jpg);
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -210,7 +213,7 @@
   z-index: 1;
   display: block;
   @include retina {
-    background-image: url(../images/products-milkshake-tab-2x.png);
+    background-image: url(../images/products-milkshake-tab-2x.jpg);
   }
   @include tablet {
     top: -117px;
@@ -223,9 +226,9 @@
     top: -180px;
   }
   @include retina {
-    background-image: url(../images/products-milkshake-desk-2x.png);
+    background-image: url(../images/products-milkshake-desk-2x.jpg);
   }
-  background-image: url(../images/products-milkshake-desk-1x.png);
+  background-image: url(../images/products-milkshake-desk-1x.jpg);
 }
 
 .ice-cream-item::after {
