@@ -1,0 +1,97 @@
+<!-- <div class="backdrop"> -->
+<div class="modal" data-modal="products-modal">
+  <div class="modal-wrap">
+    <svg class="modal-btn-cross js-modal-close">
+      <use href="/src/images/icons.svg#icon-close"></use>
+    </svg>
+    <h2 class="modal-title__about">Chololate icecream</h2>
+    <div class="round">
+      <div class="circle-cream">картинка</div>
+    </div>
+
+    <ul class="energy-list">
+      <li class="energy-list__item">
+        <span class="energy-list__circle">320</span>
+        <p class="energy-list__text">kcal</p>
+      </li>
+      <li class="energy-list__item">
+        <span class="energy-list__circle">320</span>
+        <p class="energy-list__text">kcal</p>
+      </li>
+      <li class="energy-list__item">
+        <span class="energy-list__circle">320</span>
+        <p class="energy-list__text">kcal</p>
+      </li>
+      <li class="energy-list__item">
+        <span class="energy-list__circle">320</span>
+        <p class="energy-list__text">kcal</p>
+      </li>
+    </ul>
+
+    <h3 class="subtitle">Ingredients</h3>
+
+    <ul class="ingred-list">
+      <li class="ingred-list__item">
+        <p class="ingred-list_text">Milk</p>
+        <p class="ingred-list_heft">100ml</p>
+      </li>
+      <li class="ingred-list__item">
+        <p class="ingred-list_text">Milk</p>
+        <p class="ingred-list_heft">100ml</p>
+      </li>
+      <li class="ingred-list__item">
+        <p class="ingred-list_text">Milk</p>
+        <p class="ingred-list_heft">100ml</p>
+      </li>
+      <li class="ingred-list__item">
+        <p class="ingred-list_text">Milk</p>
+        <p class="ingred-list_heft">100ml</p>
+      </li>
+      <li class="ingred-list__item">
+        <p class="ingred-list_text">Milk</p>
+        <p class="ingred-list_heft">100ml</p>
+      </li>
+      <li class="ingred-list__item">
+        <p class="ingred-list_text">Milk</p>
+        <p class="ingred-list_heft">100ml</p>
+      </li>
+    </ul>
+  </div>
+  <form class="form form-main">
+    <div class="form__group form-main__group form-position-main">
+      <label class="form__field form-main__field">
+        <input
+          class="form__input form-main__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[A-Za-z]+\s[A-Za-z]+$"
+          title="Name must be two words separated by space"
+        />
+      </label>
+      <label class="form__field form-main__field">
+        <input
+          class="form__input form-main__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          minlength="12"
+          maxlength="12"
+          pattern="^(?=.*\d)^.{12,}.*$"
+          title="Мinimum 12 digits"
+        />
+      </label>
+
+      <textarea
+        class="form__input form-main__input form__field form__input--lg form-main__input--lg"
+        name="comment"
+        rows="3"
+        placeholder="Comment"
+        aria-label="comment"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-color form__btn">Submit</button>
+  
+</div>
