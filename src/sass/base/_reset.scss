@@ -20,6 +20,7 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  cursor: url(../images/cursor.png), auto;
 }
 
 img {
@@ -31,5 +32,6 @@ img {
 
 button {
   display: block;
+  cursor: url(../images/cursor.png), auto;
   // cursor: pointer;
 }

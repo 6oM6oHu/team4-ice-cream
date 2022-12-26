@@ -7,9 +7,6 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-image: url(../images/backgroud-mob-1x.png);
-  cursor: none;
-
-  cursor: url(../images/cursor.png) 24 33, auto;
 
   @include retina {
     background-image: url(../images/backgroud-mob-2x.png);
