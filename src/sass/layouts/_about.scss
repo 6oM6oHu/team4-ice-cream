@@ -1,13 +1,10 @@
-.section {
-  width: 100%;
-  &__about {
-    background-color: $prime-bg-color;
-  }
-}
 .about {
+  width: 100%;
+
   padding-top: 60px;
   padding-bottom: 50px;
   color: $prime-text-color;
+  background-color: $prime-bg-color;
   text-align: center;
 
   @include tablet {
