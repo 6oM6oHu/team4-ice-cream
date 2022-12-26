@@ -1,14 +1,14 @@
-.section {
+.advantages {
   width: 100%;
-  &__advantages {
-    background: $prime-bg-color;
-  }
+  background: $prime-bg-color;
 }
 .advantages-container {
-  @media screen and (max-width: 479px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include tablet {
+    flex-direction: row;
   }
 }
 
@@ -18,9 +18,7 @@
   flex-direction: column;
   margin: 0 auto;
   gap: 28px;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 32px;
-  }
+  padding-bottom: 32px;
 
   @include tablet {
     display: flex;
@@ -31,8 +29,6 @@
   }
 
   @include desktop {
-    // display: flex;
-    // flex-direction: row;
     gap: 32px;
     max-width: 1168px;
     padding-bottom: 80px;
@@ -54,14 +50,41 @@
     gap: 0;
   }
 }
-.advantages-list__img {
-  padding: 7px;
-  background: #f8d24e;
-  border-radius: 25px;
-  @include desktop {
-    margin-bottom: 40px;
+
+.advantages-list__item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $yellow;
+}
+
+.advantages-list__item:nth-child(1)::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/advantages-cow-1x-min.png);
+  @include retina {
+    background-image: url(../images/advantages-cow-2x-min.png);
   }
 }
+.advantages-list__item:nth-child(2)::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/advantages-weight-1x-min.png);
+  @include retina {
+    background-image: url(../images/advantages-weight-2x-min.png);
+  }
+}
+.advantages-list__item:nth-child(3)::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/advantages-icecream-1x-min.png);
+  @include retina {
+    background-image: url(../images/advantages-icecream-2x-min.png);
+  }
+}
+
 .advantages-list__uptitle {
   font-weight: 700;
   font-size: 36px;
@@ -70,6 +93,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
+
   @include tablet {
     font-size: 48px;
     line-height: calc(59 / 48);
