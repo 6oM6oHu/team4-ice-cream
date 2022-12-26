@@ -43,11 +43,10 @@
 
   @include tablet {
     width: calc((100% - 160px) / 3);
-    gap: 16px;
+    gap: 0;
   }
   @include desktop {
     width: calc((100% - 64px) / 3);
-    gap: 0;
   }
 }
 
@@ -58,6 +57,13 @@
   height: 50px;
   border-radius: 50%;
   background-color: $yellow;
+  background-size: auto;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages-list__item:nth-child(1)::before {
@@ -97,9 +103,9 @@
   @include tablet {
     font-size: 48px;
     line-height: calc(59 / 48);
+    margin-bottom: 12px;
   }
   @include desktop {
-    margin-bottom: 12px;
     font-weight: 700;
     font-size: 58px;
     line-height: calc(71 / 58);
