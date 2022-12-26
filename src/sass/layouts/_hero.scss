@@ -1,12 +1,12 @@
 .hero {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 99px;
   overflow: hidden;
   @include tablet {
-    padding-top: 8px;
+    padding-top: 80px;
   }
   @include desktop {
-    padding-top: 45px;
+    padding-top: 93px;
   }
 }
 
