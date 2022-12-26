@@ -13,8 +13,14 @@ html {
   top: 0;
   width: 100%;
   background-color: #84a178;
-  height: 90px;
+  // height: 90px;
   z-index: 3;
+  @include tablet {
+    height: 60px;
+  }
+  @include desktop {
+    height: 90px;
+  }
 }
 
 .header__dots {
