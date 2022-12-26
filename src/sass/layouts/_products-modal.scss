@@ -41,6 +41,10 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+
+    @include retina {
+      background-image: url('../images/products-chocolate-modal-2x.jpg');
+    }
   }
 }
 .circle-cream {
