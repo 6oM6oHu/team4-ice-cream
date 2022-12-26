@@ -8,6 +8,7 @@ body {
   background-position: center;
   background-image: url(../images/backgroud-mob-1x.jpg);
   cursor: url(../images/cursor.png), auto;
+  overflow: hidden;
 
   @include retina {
     background-image: url(../images/backgroud-mob-2x.jpg);
