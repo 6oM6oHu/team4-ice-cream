@@ -6,22 +6,22 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
-  background-image: url(../images/backgroud-mob-1x.png);
+  background-image: url(../images/backgroud-mob-1x.jpg);
 
   @include retina {
-    background-image: url(../images/backgroud-mob-2x.png);
+    background-image: url(../images/backgroud-mob-2x.jpg);
   }
 
   @include tablet {
-    background-image: url(../images/backgroud-tab-1x.png);
+    background-image: url(../images/backgroud-tab-1x.jpg);
     @include retina {
-      background-image: url(../images/backgroud-tab-2x.png);
+      background-image: url(../images/backgroud-tab-2x.jpg);
     }
   }
   @include desktop {
-    background-image: url(../images/backgroud-desk-1x.png);
+    background-image: url(../images/backgroud-desk-1x.jpg);
     @include retina {
-      background-image: url(../images/backgroud-desk-2x.png);
+      background-image: url(../images/backgroud-desk-2x.jpg);
     }
   }
 
