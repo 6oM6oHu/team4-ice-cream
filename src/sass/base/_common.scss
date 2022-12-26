@@ -48,3 +48,30 @@ body {
     outline: none;
   }
 }
+
+@keyframes headerIceCreamTablet {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    // background-color: orange;
+  }
+
+  100% {
+    transform: translateY();
+  }
+}
+
+@keyframes dishHero {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}

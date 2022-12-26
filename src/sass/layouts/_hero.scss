@@ -77,16 +77,25 @@
 .hero__icecream {
   position: absolute;
   right: 53%;
-  transform: translate(50%);
+  transform: translateX(50%);
+
   bottom: 0;
   z-index: 2;
+  animation-name: headerIceCreamTablet;
+  animation-duration: 3000ms;
+
   @include tablet {
-    transform: unset;
+    transform: translateX(0);
     right: 68px;
+  }
+
+  @include desktop {
   }
 }
 
 .hero__dish {
+  animation-name: dishHero;
+  animation-duration: 3000ms;
   display: none;
   @include tablet {
     position: absolute;
