@@ -1,7 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: rgb(132, 161, 120);
   width: 100%;
   height: 100%;
+}
+
+.header__fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #84a178;
+  // height: 90px;
+  z-index: 3;
+  @include tablet {
+    height: 60px;
+  }
+  @include desktop {
+    height: 90px;
+  }
 }
 
 .header__dots {
@@ -48,10 +67,29 @@
 }
 
 .header__top {
-  width: 100%;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  padding-right: 40px;
+  @include mobile {
+    height: unset;
+    width: 480px;
+    padding-right: 20px;
+  }
+  @include tablet {
+    width: 768px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    width: 1216px;
+    padding-right: 16px;
+    height: 90px;
+    top: 0;
+  }
 }
 
 .header__logo {
@@ -150,9 +188,13 @@
 
 .header__menu-button,
 .mob-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
   fill: white;
+  padding: 0;
   @include tablet {
     margin-left: auto;
     margin-right: 32px;
@@ -170,6 +212,10 @@
     top: 29px;
   }
 }
+
+// .header__menu-open {
+//   width: 100%;
+// }
 
 .mob-close {
   position: absolute;
