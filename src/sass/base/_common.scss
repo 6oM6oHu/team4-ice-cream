@@ -41,7 +41,7 @@ body {
   transition: color $transit;
 
   &:hover {
-    color: #0a8817;
+    color: $green;
   }
 
   &:focus {
