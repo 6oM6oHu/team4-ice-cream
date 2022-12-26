@@ -63,7 +63,7 @@
   &:hover,
   &:focus {
     &::before {
-      transform: translateY(-20px) scale(1.1);
+      transform: rotate(360deg);
     }
   }
 
@@ -151,6 +151,7 @@
   top: -110px;
   display: block;
   z-index: 1;
+  transition: transform 2s;
   @include retina {
     background-image: url(../images/products-icecream-tab-2x.jpg);
   }
@@ -181,6 +182,7 @@
   top: -110px;
   display: block;
   z-index: 1;
+  transition: transform 2s;
   @include retina {
     background-image: url(../images/products-icecoffee-tab-1x.jpg);
   }
@@ -212,6 +214,7 @@
   top: -110px;
   z-index: 1;
   display: block;
+  transition: transform 2s;
   @include retina {
     background-image: url(../images/products-milkshake-tab-2x.jpg);
   }
