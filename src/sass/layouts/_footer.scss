@@ -155,14 +155,21 @@
   border-radius: 50%;
   color: $prime-bg-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $prime-text-color;
+  }
 }
 .footer-list__icon {
   fill: currentColor;
+
+  .footer-list__link:hover & {
+    width: 24px;
+    height: 24px;
+    transition: all 250ms linear;
+  }
 }
-.footer-list__link:hover,
-.footer-list__link:focus {
-  color: $prime-text-color;
-}
+
 .footer-section__contact {
   font-weight: 700;
   font-size: 12px;

@@ -21,6 +21,7 @@
   text-transform: uppercase;
   color: #fcfcfc;
   margin-bottom: 32px;
+  animation: titleHero 3000ms;
   @include tablet {
     margin-bottom: 24px;
   }
@@ -81,8 +82,7 @@
 
   bottom: 0;
   z-index: 2;
-  animation-name: headerIceCreamTablet;
-  animation-duration: 3000ms;
+  animation: headerIceCreamTablet 3000ms;
 
   @include tablet {
     transform: translateX(0);
@@ -94,9 +94,10 @@
 }
 
 .hero__dish {
-  animation-name: dishHero;
-  animation-duration: 3000ms;
+  animation: dishHero 3000ms;
+
   display: none;
+
   @include tablet {
     position: absolute;
     display: block;
