@@ -70,26 +70,27 @@
 // Хрестик для модалок
 
 .modal-btn-cross {
-  width: 20px;
-  height: 20px;
   position: absolute;
   top: 12px;
   right: 12px;
-  fill: $second-text-color;
-  // cursor: pointer;
-  @include tablet {
-    width: 24px;
-    height: 24px;
-    top: 17px;
-    right: 17px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  &__icon {
+    fill: $second-text-color;
+    width: 20px;
+    height: 20px;
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
+    &:hover,
+    &:focus {
+      fill: $green;
+    }
   }
-  &:hover,
-  &:focus {
-    fill: $green;
-  }
-}
-
-.icon-btn-cross {
 }
 
 //  Forma
