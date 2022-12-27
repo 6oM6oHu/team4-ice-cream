@@ -10,6 +10,11 @@ p {
   margin-bottom: 0;
 }
 
+html {
+  min-height: 100%;
+  // overflow-y: auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
