@@ -117,6 +117,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: calc(22 / 12);
+  letter-spacing: -0.02em;
   @include tablet {
     font-size: 14px;
     line-height: calc(26 / 14);
@@ -124,6 +125,7 @@
   @include desktop {
     font-size: 16px;
     line-height: calc(30 / 16);
+    letter-spacing: 0.02em;
   }
 }
 
@@ -220,25 +222,4 @@
   @include desktop {
     line-height: calc(22 / 12);
   }
-  // &::before{
-  //   content: '';
-  //   position:absolute;
-  //   height: 1px;
-  //   background-color: #e1e1e1;
-  //   width: calc(100% + 20px * 2);
-  //   left: -20px;
-  //   bottom: 82px;
-  //   @include tablet{
-  //     width: calc(100% + 32px * 2);
-  //     left: -32px;
-  //     bottom: 50px;
-  //   }
-  //   @media screen and(min-width:1200px) {
-
-  //     width: 100%;
-  //     left: 0;
-  //     bottom: 44px;
-
-  // }
-  // }
 }
