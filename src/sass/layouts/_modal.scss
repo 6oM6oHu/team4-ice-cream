@@ -66,6 +66,9 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
+.overlay.active::-webkit-scrollbar {
+  opacity: 0;
+}
 
 // Хрестик для модалок
 
@@ -78,6 +81,8 @@
   font: inherit;
   color: inherit;
   background-color: transparent;
+  width: 20px;
+  height: 20px;
   &__icon {
     fill: $second-text-color;
     width: 20px;
@@ -90,6 +95,10 @@
     &:focus {
       fill: $green;
     }
+  }
+  @include tablet {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -121,6 +130,7 @@
     border-radius: 10px;
     padding-right: 12px;
     padding-left: 12px;
+
     // cursor: pointer;
 
     @include tablet {
@@ -173,6 +183,7 @@
   }
 
   &__input {
+    outline: none;
     @media screen and (max-width: 767px) {
       height: 32px;
     }
@@ -187,6 +198,20 @@
 .form-position-main {
   @media screen and (max-width: 767px) {
     margin-bottom: 26px;
+  }
+}
+
+// .form-main__input:not(:focus):not(:placeholder-shown):invalid {
+//   border-color: red;
+// }
+.form-main__input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.form-ingredients__input {
+  outline: none;
+  &:not(:placeholder-shown):invalid {
+    border-color: red;
   }
 }
 

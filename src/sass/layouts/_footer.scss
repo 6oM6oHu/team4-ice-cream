@@ -27,7 +27,7 @@
 .footer-section__uptitle {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(27 / 18);
+  line-height: calc(22 / 18);
   text-transform: uppercase;
   color: $prime-text-color;
   margin-bottom: 16px;
@@ -48,12 +48,13 @@
 
 .title-wrap {
   margin-bottom: 60px;
+  width: 243px;
   @include tablet {
-    width: 352px;
+    min-width: 352px;
     margin-bottom: 0;
   }
   @include desktop {
-    width: 504px;
+    min-width: 504px;
   }
 }
 
@@ -115,7 +116,7 @@
   margin-left: auto;
   font-weight: 700;
   font-size: 12px;
-  line-height: calc(26 / 12);
+  line-height: calc(22 / 12);
   @include tablet {
     font-size: 14px;
     line-height: calc(26 / 14);

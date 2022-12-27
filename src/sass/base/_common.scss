@@ -38,8 +38,10 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+.no-scroll-modal::-webkit-scrollbar {
+  // scrollbar-width: none;
+}
 .no-scroll-modal {
-  overflow: hidden;
 }
 
 .how-made-link {

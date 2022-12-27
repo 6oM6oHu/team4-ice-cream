@@ -73,7 +73,7 @@
   height: 50px;
   padding-right: 40px;
   @include mobile {
-    height: unset;
+    // height: unset;
     width: 480px;
     padding-right: 20px;
   }
@@ -138,10 +138,10 @@
   }
 
   @include mobile {
-    width: 480px;
+    // width: 480px;
   }
   @include tablet {
-    width: 768px;
+    // width: 768px;
     padding-top: 140px;
   }
   @include desktop {
@@ -184,6 +184,16 @@
     &:focus {
       color: #f8d24e;
     }
+  }
+}
+
+.header__logo-mob {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 1;
+  @include desktop {
+    display: none;
   }
 }
 
