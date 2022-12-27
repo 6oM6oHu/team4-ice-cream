@@ -199,6 +199,10 @@
   @include desktop {
     display: none;
   }
+  &:hover,
+  &:focus {
+    fill: $yellow;
+  }
 }
 
 .header__menu-button {

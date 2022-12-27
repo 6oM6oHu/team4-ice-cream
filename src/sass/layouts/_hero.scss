@@ -138,6 +138,10 @@
 
 .hero__arrow {
   fill: white;
+  &:hover,
+  &:focus {
+    fill: $yellow;
+  }
 }
 
 .hero__list {
