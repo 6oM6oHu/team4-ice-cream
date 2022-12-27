@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <style>
+      .hero__title {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: calc(33 / 26);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +24,8 @@
     />
     <!-- Підключення стилів для слайдера -->
 
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,8 +36,6 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-
-    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body class="js-scroll">
     <include src="./partials/header.html"></include>
