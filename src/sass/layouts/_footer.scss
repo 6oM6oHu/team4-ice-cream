@@ -19,6 +19,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  @include desktop {
+    align-items: flex-end;
+  }
 }
 
 .footer-section__uptitle {
@@ -110,8 +113,17 @@
   flex-wrap: wrap;
   align-items: baseline;
   margin-left: auto;
-  // justify-content: right;
-  // margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(26 / 12);
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .footer-section {
@@ -127,20 +139,11 @@
 }
 
 .footer-section__contact {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.9;
   text-align: right;
   color: $second-text-color;
   margin-right: 5px;
 }
-// .footer__buttom-text {
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: 1;
-//   color: $prime-text-color;
-//   margin-bottom: 40px;
-// }
+
 .footer-list__item {
   width: 34px;
   height: 34px;
@@ -171,17 +174,11 @@
 }
 
 .footer-section__contact {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(22 / 12);
   text-align: right;
   color: $second-text-color;
 }
 
 .footer-section__number {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(22 / 12);
   text-align: right;
   color: $prime-text-color;
 }
