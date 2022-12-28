@@ -44,22 +44,3 @@
 // анімація
 
 // Обнулення стрілок для переключення в css
-
-.slick-prev:before,
-.slick-next:before {
-  display: none;
-}
-
-.slick-next {
-  right: 0;
-}
-
-.slick-dotted.slick-slider {
-  margin: 0;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
