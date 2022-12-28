@@ -2,16 +2,28 @@
   width: 100%;
 
   & {
-    background-image: linear-gradient(to top, transparent 60%, #84a178 60%);
+    background-image: linear-gradient(
+      to top,
+      transparent 60%,
+      $prime-bg-color 60%
+    );
 
     @include tablet {
       padding-top: 60px;
-      background-image: linear-gradient(to top, transparent 45%, #84a178 45%);
+      background-image: linear-gradient(
+        to top,
+        transparent 45%,
+        $prime-bg-color 45%
+      );
     }
 
     @include desktop {
       padding-top: 80px;
-      background-image: linear-gradient(to top, transparent 65%, #84a178 65%);
+      background-image: linear-gradient(
+        to top,
+        transparent 65%,
+        $prime-bg-color 65%
+      );
     }
   }
 }
@@ -44,4 +56,33 @@
 
 .slick-dotted.slick-slider {
   margin: 0;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#cf3 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
