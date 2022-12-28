@@ -2,6 +2,10 @@
   background-color: rgb(132, 161, 120);
   width: 100%;
   height: 100%;
+
+  &__container {
+    overflow: hidden;
+  }
 }
 
 .header__fix {
@@ -22,27 +26,27 @@
 }
 
 .header__top {
-  position: fixed;
+  // position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 3;
   width: 100%;
   height: 50px;
-  padding-right: 40px;
+  // padding-right: 40px;
 
   @include mobile {
-    width: 480px;
+    // width: 480px;
   }
   @include tablet {
     height: 80px;
-    width: 705px;
+    // width: 705px;
     padding-right: 0;
     padding-top: 9px;
   }
   @include desktop {
     padding-top: 0;
-    width: 1168px;
+    // width: 1168px;
 
     height: 100px;
     top: 0;
