@@ -1,3 +1,52 @@
+.hero-bg {
+  background-color: rgb(132, 161, 120);
+  width: 100%;
+  height: 100%;
+}
+
+.hero__dots {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero-dots-mob-2x-min.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    background-image: url(../images/hero-dots-tab-2x-min.png);
+  }
+  @include desktop {
+    width: 1200px;
+    background-image: url(../images/hero-dots-desk-2x-min.png);
+  }
+}
+
+.hero__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  height: 502px;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    padding-top: 20px;
+    height: 415px;
+    max-width: 768px;
+  }
+  @include desktop {
+    height: 664px;
+    max-width: 100%;
+  }
+  overflow: hidden;
+}
+
 .hero {
   width: 100%;
   padding-top: 99px;
