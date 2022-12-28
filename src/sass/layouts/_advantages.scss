@@ -69,27 +69,31 @@
 .advantages-list__item:nth-child(1)::before {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
   background-image: url(../images/advantages-cow-1x-min.png);
   @include retina {
+    background-size: 36px;
     background-image: url(../images/advantages-cow-2x-min.png);
   }
 }
 .advantages-list__item:nth-child(2)::before {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+
   background-image: url(../images/advantages-weight-1x-min.png);
+
   @include retina {
+    background-size: 36px;
     background-image: url(../images/advantages-weight-2x-min.png);
   }
 }
 .advantages-list__item:nth-child(3)::before {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+
   background-image: url(../images/advantages-icecream-1x-min.png);
+
   @include retina {
+    background-size: 36px;
     background-image: url(../images/advantages-icecream-2x-min.png);
   }
 }
