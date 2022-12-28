@@ -2,16 +2,28 @@
   width: 100%;
 
   & {
-    background-image: linear-gradient(to top, transparent 60%, #84a178 60%);
+    background-image: linear-gradient(
+      to top,
+      transparent 60%,
+      $prime-bg-color 60%
+    );
 
     @include tablet {
       padding-top: 60px;
-      background-image: linear-gradient(to top, transparent 45%, #84a178 45%);
+      background-image: linear-gradient(
+        to top,
+        transparent 45%,
+        $prime-bg-color 45%
+      );
     }
 
     @include desktop {
       padding-top: 80px;
-      background-image: linear-gradient(to top, transparent 65%, #84a178 65%);
+      background-image: linear-gradient(
+        to top,
+        transparent 65%,
+        $prime-bg-color 65%
+      );
     }
   }
 }
@@ -32,16 +44,3 @@
 // анімація
 
 // Обнулення стрілок для переключення в css
-
-.slick-prev:before,
-.slick-next:before {
-  display: none;
-}
-
-.slick-next {
-  right: 0;
-}
-
-.slick-dotted.slick-slider {
-  margin: 0;
-}
