@@ -1,63 +1,33 @@
-.hero-bg {
+.hero {
   background-color: rgb(132, 161, 120);
   width: 100%;
   height: 100%;
-}
-
-.hero__dots {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/hero-dots-mob-2x-min.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  @include mobile {
-    width: 480px;
-  }
-  @include tablet {
-    width: 768px;
-    background-image: url(../images/hero-dots-tab-2x-min.png);
-  }
-  @include desktop {
-    width: 1200px;
-    background-image: url(../images/hero-dots-desk-2x-min.png);
-  }
 }
 
 .hero__container {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 12px;
+  padding-top: 110px;
   height: 502px;
   width: 100%;
+  overflow: hidden;
+  background-image: url(../images/hero-dots-mob-1x-min.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   @include mobile {
-    // max-width: 480px;
   }
+
   @include tablet {
-    padding-top: 20px;
+    padding-top: 80px;
     height: 415px;
-    // max-width: 768px;
+    background-image: url(../images/hero-dots-tab-2x-min.png);
   }
   @include desktop {
     height: 664px;
-    // max-width: 100%;
-    // padding: auto;
-  }
-  overflow: hidden;
-}
-
-.hero {
-  width: 100%;
-  padding-top: 99px;
-  overflow: hidden;
-  @include tablet {
-    padding-top: 60px;
-  }
-  @include desktop {
-    padding-top: 93px;
+    padding-top: 118px;
+    background-image: url(../images/hero-dots-desk-2x-min.png);
   }
 }
 
@@ -128,8 +98,8 @@
 
 .hero__icecream {
   position: absolute;
-  right: 53%;
-  transform: translateX(50%);
+  right: 44%;
+  transform: translateX(45%);
 
   bottom: 0;
   z-index: 2;
@@ -141,6 +111,7 @@
   }
 
   @include desktop {
+    right: 97px;
   }
 }
 
@@ -200,7 +171,7 @@
   @include tablet {
     position: absolute;
     top: 94px;
-    right: 0;
+    right: 16px;
     display: flex;
     flex-direction: column;
     gap: 20px;
