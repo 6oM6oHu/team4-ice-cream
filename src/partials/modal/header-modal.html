@@ -1,7 +1,9 @@
 <div class="modal" data-modal="header-modal">
-  <svg class="modal-btn-cross js-modal-close">
-    <use href="/src/images/icons.svg#icon-close"></use>
-  </svg>
+  <button type="button" class="modal-btn-cross js-modal-close">
+    <svg class="modal-btn-cross__icon">
+      <use href="/src/images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 
   <h2 class="modal__title">Buy now</h2>
 
@@ -16,7 +18,7 @@
           id="icecream"
         />
         <label class="check-item check-item--first" for="icecream"
-          >ice cream</label
+          ><span class="check-item__text">ice cream</span></label
         >
       </li>
       <li class="list-item">
@@ -28,7 +30,7 @@
           id="icecoffee"
         />
         <label class="check-item check-item--second" for="icecoffee"
-          >ice coffee</label
+          ><span class="check-item__text">ice coffee</span></label
         >
       </li>
       <li class="list-item">
@@ -40,7 +42,7 @@
           id="milcshake"
         />
         <label class="check-item check-item--third" for="milcshake"
-          >milcshake</label
+          ><span class="check-item__text">milkshake</span></label
         >
       </li>
     </ul>

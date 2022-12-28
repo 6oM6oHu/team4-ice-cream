@@ -12,7 +12,7 @@ $('.autoplay-gallery').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
-  cssEase: 'linear',
+  // cssEase: 'linear',
   autoplay: true,
   autoplaySpeed: 6000,
 });

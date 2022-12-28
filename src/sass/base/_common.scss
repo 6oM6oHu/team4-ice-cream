@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   font-size: 16px;
@@ -27,11 +30,18 @@ body {
   }
 }
 
+* {
+  &:focus {
+    // outline: none;
+  }
+}
 .no-scroll {
   overflow: hidden;
 }
+.no-scroll-modal::-webkit-scrollbar {
+  // scrollbar-width: none;
+}
 .no-scroll-modal {
-  overflow: hidden;
 }
 
 .how-made-link {
@@ -89,5 +99,18 @@ body {
 
   100% {
     transform: translateX(0%);
+  }
+}
+
+@keyframes modalA {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  50% {
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
 }

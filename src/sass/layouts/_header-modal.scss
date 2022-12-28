@@ -4,7 +4,6 @@
   align-items: center;
 
   gap: 31px;
-
   width: 100%;
 
   font-family: Montserrat;
@@ -14,107 +13,76 @@
 }
 
 .modal-list {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  gap: 198px 20px;
+  gap: 82px 20px;
+  width: 100%;
 
-  padding-top: 179px;
-  padding-bottom: 20px;
+  padding-top: 83px;
 
   @include tablet {
     flex-direction: row;
+    padding-top: 103px;
   }
 }
 
 .list-item {
   position: relative;
-  width: 132px;
-  text-align: center;
 
-  &:nth-child(1) .check-item::after {
-    background-color: rgba(156, 190, 143, 0.7);
-    box-shadow: 0px 5.26px 19.73px 0px #0a881740;
-  }
-  &:nth-child(1) .check-item::before {
+  &:nth-child(1) .check-item {
     border: 2px solid rgba(156, 190, 143, 0.7);
   }
 
-  &:nth-child(2) .check-item::after {
+  &:nth-child(1) .check-item::before {
+    background-color: rgba(156, 190, 143, 0.7);
+    box-shadow: 0px 5.26px 19.73px 0px #0a881740;
+  }
+
+  &:nth-child(2) .check-item {
+    border: 2px solid #efd478;
+  }
+  &:nth-child(2) .check-item::before {
     background-color: rgba(248, 210, 78, 0.7);
     box-shadow: 0px 5.26px 19.73px 0px #99721740;
   }
-  &:nth-child(2) .check-item::before {
-    border: 2px solid #efd478;
-  }
 
-  &:nth-child(3) .check-item::after {
+  &:nth-child(3) .check-item {
+    border: 2px solid #d6936d;
+  }
+  &:nth-child(3) .check-item::before {
     background-color: rgba(213, 117, 63, 0.7);
     box-shadow: 0px 5.26px 19.73px 0px #00000040;
   }
-  &:nth-child(3) .check-item::before {
-    border: 2px solid #d6936d;
+
+  &:nth-child(1) .check-item::after {
+    background-image: url(../images/products-icecream-modal-1x.jpg);
+  }
+
+  &:nth-child(2) .check-item::after {
+    background-image: url(../images/products-icecoffee-modal-1x.jpg);
+  }
+
+  &:nth-child(3) .check-item::after {
+    background-image: url(../images/products-milkshake-modal-1x.jpg);
   }
 
   & .check-input {
     appearance: none;
-  }
-
-  &:nth-child(1) .check-input::after {
-    z-index: 1;
     position: absolute;
-    content: '';
-    left: 0;
-    top: -159;
-
-    width: 132px;
-    height: 132px;
-    background-image: url(../images/products-icecream-modal-1x.jpg);
-    background-size: contain;
-    border-radius: 50%;
-  }
-
-  &:nth-child(2) .check-input::after {
-    z-index: 1;
-    position: absolute;
-    content: '';
-    left: 0;
-    top: -159;
-
-    width: 132px;
-    height: 132px;
-    background-image: url(../images/products-icecoffee-modal-1x.jpg);
-    background-size: contain;
-    border-radius: 50%;
-  }
-
-  &:nth-child(3) .check-input::after {
-    z-index: 1;
-    position: absolute;
-    content: '';
-    left: 0;
-    top: -159;
-
-    width: 132px;
-    height: 132px;
-    background-image: url(../images/products-milkshake-modal-1x.jpg);
-    background-size: contain;
-border-radius: 50%;
-  
   }
 }
 
-.check-input:checked + .check-item--first::before {
+.check-input:checked + .check-item--first {
   background-color: rgba(156, 190, 143, 0.7);
 }
 
-.check-input:checked + .check-item--second::before {
+.check-input:checked + .check-item--second {
   background-color: rgba(248, 210, 78, 0.7);
 }
 
-.check-input:checked + .check-item--third::before {
+.check-input:checked + .check-item--third {
   background-color: rgba(213, 117, 63, 0.7);
 }
 
@@ -127,28 +95,38 @@ border-radius: 50%;
 
   text-transform: uppercase;
 
+  display: block;
+  width: 132px;
+  height: 136px;
+
+  border-radius: 15px;
+
   &::before {
-    z-index: -1;
     position: absolute;
     content: '';
     left: 0;
-    top: -96;
-
-    width: 132px;
-    height: 136px;
-
-    border-radius: 15px;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: -152;
+    bottom: 60;
 
     width: 132px;
     height: 132px;
 
     border-radius: 50%;
   }
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 66;
+    border-radius: 50%;
+
+    width: 132px;
+    height: 132px;
+    background-size: contain;
+  }
+}
+
+.check-item__text {
+  display: block;
+  padding-top: 96px;
 }

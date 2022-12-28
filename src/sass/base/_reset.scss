@@ -10,6 +10,11 @@ p {
   margin-bottom: 0;
 }
 
+html {
+  min-height: 100%;
+  // overflow-y: auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -21,6 +26,7 @@ a {
   margin: 0;
   padding: 0;
   cursor: url(../images/cursor.png), auto;
+  font-family: inherit;
 }
 
 img {

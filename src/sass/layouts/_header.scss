@@ -1,108 +1,71 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .header {
   background-color: rgb(132, 161, 120);
   width: 100%;
   height: 100%;
+
+  &__container {
+    overflow: hidden;
+  }
 }
 
 .header__fix {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #84a178;
   height: 80px;
   z-index: 3;
   @include tablet {
     height: 80px;
   }
   @include desktop {
-    height: 90px;
+    height: 100px;
   }
 }
-
-.header__dots {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/hero-dots-mob-2x-min.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  @include mobile {
-    width: 480px;
-  }
-  @include tablet {
-    width: 768px;
-    background-image: url(../images/hero-dots-tab-2x-min.png);
-  }
-  @include desktop {
-    width: 1200px;
-    background-image: url(../images/hero-dots-desk-2x-min.png);
-  }
-}
-
-.header__container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 12px;
-  height: 502px;
-  @include mobile {
-    max-width: 480px;
-  }
-  @include tablet {
-    padding-top: 20px;
-    height: 415px;
-    max-width: 768px;
-  }
-  @include desktop {
-    height: 664px;
-    max-width: 100%;
-  }
-  overflow: hidden;
+.header-bg {
+  background: linear-gradient(0deg, rgba(12, 42, 1, 0.5), rgba(12, 42, 1, 0.5));
 }
 
 .header__top {
-  position: fixed;
+  // position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 3;
   width: 100%;
   height: 50px;
-  padding-right: 40px;
+  // padding-right: 40px;
+
   @include mobile {
-    height: unset;
-    width: 480px;
-    padding-right: 20px;
+    // width: 480px;
   }
   @include tablet {
-    width: 768px;
-    padding-right: 32px;
+    height: 80px;
+    // width: 705px;
+    padding-right: 0;
+    padding-top: 9px;
   }
   @include desktop {
-    width: 1216px;
-    padding-right: 16px;
-    height: 90px;
+    padding-top: 0;
+    // width: 1168px;
+
+    height: 100px;
     top: 0;
   }
 }
 
 .header__logo {
   width: 40px;
-  height: 38px;
+  height: 37px;
   z-index: 31;
   @include mobile {
-    width: unset;
-    height: unset;
   }
   @include tablet {
-    width: 44px;
-    height: 48px;
+    width: 48px;
+    height: 44px;
+  }
+  @include desktop {
+    width: 60px;
+    height: 65px;
   }
 }
 
@@ -139,10 +102,10 @@ html {
   }
 
   @include mobile {
-    width: 480px;
+    // width: 480px;
   }
   @include tablet {
-    width: 768px;
+    // width: 768px;
     padding-top: 140px;
   }
   @include desktop {
@@ -172,6 +135,8 @@ html {
   font-size: 32px;
   line-height: calc(39 / 32);
   color: #fcfcfc;
+  padding-top: 20px;
+  padding-bottom: 20px;
   &:hover,
   &:focus {
     color: black;
@@ -183,6 +148,16 @@ html {
     &:focus {
       color: #f8d24e;
     }
+  }
+}
+
+.header__logo-mob {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 1;
+  @include desktop {
+    display: none;
   }
 }
 
@@ -201,6 +176,10 @@ html {
   }
   @include desktop {
     display: none;
+  }
+  &:hover,
+  &:focus {
+    fill: $yellow;
   }
 }
 
@@ -225,6 +204,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include tablet {
+    right: 0;
+  }
 }
 
 .header__button-buy {

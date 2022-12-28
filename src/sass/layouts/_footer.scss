@@ -19,12 +19,15 @@
     justify-content: space-between;
     align-items: center;
   }
+  @include desktop {
+    align-items: flex-end;
+  }
 }
 
 .footer-section__uptitle {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(27 / 18);
+  line-height: calc(22 / 18);
   text-transform: uppercase;
   color: $prime-text-color;
   margin-bottom: 16px;
@@ -45,12 +48,13 @@
 
 .title-wrap {
   margin-bottom: 60px;
+  width: 243px;
   @include tablet {
-    width: 352px;
+    min-width: 352px;
     margin-bottom: 0;
   }
   @include desktop {
-    width: 504px;
+    min-width: 504px;
   }
 }
 
@@ -110,8 +114,19 @@
   flex-wrap: wrap;
   align-items: baseline;
   margin-left: auto;
-  // justify-content: right;
-  // margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: -0.02em;
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer-section {
@@ -127,20 +142,11 @@
 }
 
 .footer-section__contact {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.9;
   text-align: right;
   color: $second-text-color;
   margin-right: 5px;
 }
-// .footer__buttom-text {
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: 1;
-//   color: $prime-text-color;
-//   margin-bottom: 40px;
-// }
+
 .footer-list__item {
   width: 34px;
   height: 34px;
@@ -171,17 +177,11 @@
 }
 
 .footer-section__contact {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(22 / 12);
   text-align: right;
   color: $second-text-color;
 }
 
 .footer-section__number {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(22 / 12);
   text-align: right;
   color: $prime-text-color;
 }
@@ -222,25 +222,4 @@
   @include desktop {
     line-height: calc(22 / 12);
   }
-  // &::before{
-  //   content: '';
-  //   position:absolute;
-  //   height: 1px;
-  //   background-color: #e1e1e1;
-  //   width: calc(100% + 20px * 2);
-  //   left: -20px;
-  //   bottom: 82px;
-  //   @include tablet{
-  //     width: calc(100% + 32px * 2);
-  //     left: -32px;
-  //     bottom: 50px;
-  //   }
-  //   @media screen and(min-width:1200px) {
-
-  //     width: 100%;
-  //     left: 0;
-  //     bottom: 44px;
-
-  // }
-  // }
 }
