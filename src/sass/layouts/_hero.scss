@@ -4,6 +4,29 @@
   height: 100%;
 }
 
+.hero__dots {
+  position: absolute;
+  right: 42%;
+  transform: translate(42%);
+  background-image: url(../images/hero-dots-mob-1x-min.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 50px;
+  width: 320px;
+  bottom: 0;
+  @include tablet {
+    height: 68px;
+    width: 768px;
+    background-image: url(../images/hero-dots-tab-2x-min.png);
+  }
+  @include desktop {
+    height: 385px;
+    width: 1200px;
+    background-image: url(../images/hero-dots-desk-2x-min.png);
+  }
+}
+
 .hero__container {
   position: relative;
   margin-left: auto;
@@ -12,22 +35,16 @@
   height: 502px;
   width: 100%;
   overflow: hidden;
-  background-image: url(../images/hero-dots-mob-1x-min.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
   @include mobile {
   }
 
   @include tablet {
     padding-top: 80px;
     height: 415px;
-    background-image: url(../images/hero-dots-tab-2x-min.png);
   }
   @include desktop {
     height: 664px;
     padding-top: 118px;
-    background-image: url(../images/hero-dots-desk-2x-min.png);
   }
 }
 
@@ -98,8 +115,8 @@
 
 .hero__icecream {
   position: absolute;
-  right: 44%;
-  transform: translateX(45%);
+  right: 42%;
+  transform: translateX(42%);
 
   bottom: 0;
   z-index: 2;
