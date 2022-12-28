@@ -58,29 +58,6 @@
   margin: 0;
 }
 
-@keyframes cf3FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#cf3 img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
-}
-
 .slick-arrow {
   position: absolute;
   top: 0;
