@@ -1,8 +1,8 @@
 $('.autoplay-customers').slick({
-  arrows: false,
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  arrows: false,
   autoplay: true,
   autoplaySpeed: 5000,
 });
@@ -10,10 +10,10 @@ $('.autoplay-customers').slick({
 // section gallery
 
 $('.autoplay-gallery').slick({
-  arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
+  arrows: false,
   autoplay: true,
   autoplaySpeed: 6000,
 });
