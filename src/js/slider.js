@@ -1,5 +1,6 @@
 $('.autoplay-customers').slick({
   dots: true,
+  arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -9,6 +10,7 @@ $('.autoplay-customers').slick({
 // section gallery
 
 $('.autoplay-gallery').slick({
+  arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
