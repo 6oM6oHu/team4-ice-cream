@@ -71,12 +71,14 @@
   z-index: 3;
   width: 100%;
   height: 50px;
+  padding-right: 40px;
 
   @include mobile {
     width: 480px;
   }
   @include tablet {
     width: 705px;
+    padding-right: 0;
   }
   @include desktop {
     width: 1168px;
