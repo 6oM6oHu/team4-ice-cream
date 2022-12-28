@@ -65,9 +65,6 @@
   overflow-x: hidden;
 }
 
-.modal.active {
-  animation: modalA 500ms;
-}
 .overlay.active::-webkit-scrollbar {
   opacity: 0;
 }

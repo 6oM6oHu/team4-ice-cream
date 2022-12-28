@@ -81,18 +81,7 @@
 }
 
 .hero__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 108px;
-  height: 38px;
-  font-size: 12px;
-  line-height: calc(15 / 12);
-  color: #000000;
-  z-index: 3;
-
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
+  z-index: 2;
 }
 
 .hero__link {
