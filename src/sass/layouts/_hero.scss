@@ -32,17 +32,18 @@
   margin-right: auto;
   padding-top: 12px;
   height: 502px;
+  width: 100%;
   @include mobile {
-    max-width: 480px;
+    // max-width: 480px;
   }
   @include tablet {
     padding-top: 20px;
     height: 415px;
-    max-width: 768px;
+    // max-width: 768px;
   }
   @include desktop {
     height: 664px;
-    max-width: 100%;
+    // max-width: 100%;
   }
   overflow: hidden;
 }
@@ -131,11 +132,11 @@
 
   bottom: 0;
   z-index: 2;
-  animation: headerIceCreamTablet 3000ms;
 
   @include tablet {
     transform: translateX(0);
     right: 68px;
+    animation: headerIceCreamTablet 3000ms;
   }
 
   @include desktop {

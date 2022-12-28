@@ -1,4 +1,5 @@
 .reviews {
+  overflow: hidden;
   @include sectionSet($p-top: 80px, $p-bot: 64px);
 
   @include tablet {
@@ -147,4 +148,10 @@
   color: #6e6e6e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev,
+.slick-next,
+.slick-arrow {
+  display: none;
 }
